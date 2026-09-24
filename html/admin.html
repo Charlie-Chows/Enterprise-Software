@@ -1387,6 +1387,12 @@
         }
 
         @media (max-width: 900px) {
+            html,
+            body {
+                height: auto !important;
+                min-height: 100%;
+            }
+
             .dash-header {
                 display: flex;
             }
@@ -2212,7 +2218,7 @@
         </button>
 
         <a class="dash-header__brand" href="index.html" id="dashHeaderLogo" aria-label="Stackly — control plane home">
-            <img src="../logo.webp" alt="Stackly">
+            <img src="../assets/logo.webp" alt="Stackly">
         </a>
 
         <span class="dash-header__spacer" aria-hidden="true"></span>
@@ -2229,7 +2235,7 @@
         <aside class="dash-sidebar" aria-label="Control plane navigation">
 
             <a class="dash-logo" href="index.html" id="dashLogo" aria-label="Stackly — control plane home">
-                <img src="../logo.webp" alt="Stackly">
+                <img src="../assets/logo.webp" alt="Stackly">
             </a>
 
             <span class="dash-role-chip">ADMIN</span>
@@ -3555,7 +3561,7 @@
         aria-hidden="true">
         <div class="dash-overlay__top">
             <a class="brand on-dark" href="index.html" id="dashOverlayLogo" aria-label="Stackly — control plane home">
-                <img class="brand__logo" src="../logo.webp" alt="Stackly">
+                <img class="brand__logo" src="../assets/logo.webp" alt="Stackly">
             </a>
             <button class="dash-overlay__close" id="dashOverlayClose" type="button" aria-label="Close menu">
                 <i class="fa-solid fa-xmark" aria-hidden="true"></i>

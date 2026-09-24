@@ -1277,6 +1277,12 @@
         }
 
         @media (max-width: 900px) {
+            html,
+            body {
+                height: auto !important;
+                min-height: 100%;
+            }
+
             .dash-header {
                 display: flex;
             }
@@ -1463,7 +1469,7 @@
         </button>
 
         <a class="dash-header__brand" href="#" id="dashHeaderLogo" aria-label="Stackly — dashboard home">
-            <img src="../logo.webp" alt="Stackly">
+            <img src="../assets/logo.webp" alt="Stackly">
         </a>
 
         <span class="dash-header__spacer" aria-hidden="true"></span>
@@ -1480,7 +1486,7 @@
         <aside class="dash-sidebar" aria-label="Dashboard navigation">
 
             <a class="dash-logo" href="#" id="dashLogo" aria-label="Stackly — dashboard home">
-                <img src="../logo.webp" alt="Stackly">
+                <img src="../assets/logo.webp" alt="Stackly">
             </a>
 
             <span class="dash-role-chip">USER</span>
@@ -2629,7 +2635,7 @@
         aria-hidden="true">
         <div class="dash-overlay__top">
             <a class="brand on-dark" href="#" id="dashOverlayLogo" aria-label="Stackly — dashboard home">
-                <img class="brand__logo" src="../logo.webp" alt="Stackly">
+                <img class="brand__logo" src="../assets/logo.webp" alt="Stackly">
             </a>
             <button class="dash-overlay__close" id="dashOverlayClose" type="button" aria-label="Close menu">
                 <i class="fa-solid fa-xmark" aria-hidden="true"></i>
