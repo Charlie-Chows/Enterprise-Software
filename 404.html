@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Route Not Resolved · Stackly</title>
+<meta name="description" content="The page you are looking for is not on the Stackly platform.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="global.css">
+
+<style>
+/* ==========================================================================
+   404 — page-specific styles
+   No 404.css exists in the project structure, so all styles live here.
+   Full-screen centred. No header. No footer. No navigation.
+   ========================================================================== */
+
+.err-body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--canvas);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.err {
+  width: 100%;
+  padding: clamp(32px, 6vw, 80px) 0;
+}
+
+.err__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* logo */
+.err__brand {
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+/* the big 404 */
+.err__code-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: clamp(22px, 3vw, 32px);
+}
+
+.err__code {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(6.5rem, 22vw, 14rem);
+  line-height: .86;
+  letter-spacing: -.06em;
+  color: var(--navy-900);
+  font-variant-numeric: tabular-nums;
+  display: inline-flex;
+  align-items: baseline;
+  gap: clamp(4px, .8vw, 12px);
+}
+
+.err__code span { display: inline-block; }
+.err__code .err__zero {
+  position: relative;
+  color: var(--navy-900);
+}
+
+/* schematic beneath the 404 */
+.err__figure {
+  margin: 0 0 clamp(30px, 4vw, 44px);
+}
+.err__svg {
+  display: block;
+  width: clamp(180px, 42vw, 280px);
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+.err__figure-cap {
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: .5625rem;
+  letter-spacing: .22em;
+  color: var(--steel-400);
+}
+
+/* rule under the schematic */
+.err__rule {
+  width: clamp(48px, 8vw, 72px);
+  height: 2px;
+  background: var(--teal-500);
+  margin: 0 auto clamp(28px, 4vw, 40px);
+}
+
+/* copy */
+.err__title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -.024em;
+  color: var(--navy-900);
+  margin-bottom: 20px;
+  max-width: 20ch;
+}
+
+.err__lead {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--steel-400);
+  max-width: 52ch;
+  margin-bottom: clamp(34px, 5vw, 48px);
+}
+
+/* actions */
+.err__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* opposite-direction arrow motion — Back to Home drifts right,
+   Go Back drifts left. Overrides the shared .btn:hover i rule. */
+.err__actions .btn--primary:hover i { transform: translateX(6px); }
+.err__actions .btn--ghost:hover i   { transform: translateX(-6px); }
+
+/* meta */
+.err__meta {
+  margin-top: clamp(40px, 6vw, 68px);
+  font-family: var(--font-mono);
+  font-size: .5625rem;
+  letter-spacing: .22em;
+  color: var(--steel-400);
+}
+
+/* responsive — buttons stack full width on very small screens */
+@media (max-width: 600px) {
+  .err__code {
+    font-size: clamp(5rem, 26vw, 8rem);
+    letter-spacing: -.05em;
+  }
+  .err__actions { flex-direction: column; align-items: stretch; }
+  .err__actions .btn { width: 100%; }
+}
+
+@media (max-width: 400px) {
+  .err__code { font-size: 4.75rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .err__actions .btn:hover i,
+  .err__actions .btn--primary:hover i,
+  .err__actions .btn--ghost:hover i { transform: none !important; }
+}
+</style>
+</head>
+
+<body class="err-body">
+
+<main class="err">
+  <div class="container err__inner">
+
+    <!-- LOGO -->
+    <a class="brand err__brand" href="index.html" aria-label="Stackly — home">
+      <img class="brand__logo" src="logo.webp" alt="" width="34" height="34">
+      
+    </a>
+
+    <!-- THE BIG 404 -->
+    <div class="err__code-wrap">
+      <p class="err__code" aria-label="Error 404">
+        <span>4</span><span class="err__zero" aria-hidden="true">0</span><span>4</span>
+      </p>
+    </div>
+
+    <!-- SCHEMATIC — a route that terminates -->
+    <figure class="err__figure" aria-hidden="true">
+      <svg class="err__svg" viewBox="0 0 320 40" preserveAspectRatio="xMidYMid meet">
+        <line x1="0" y1="20" x2="230" y2="20"
+              stroke="#3B9797" stroke-width="1.5" stroke-linecap="square"/>
+
+        <circle cx="80"  cy="20" r="4" fill="#132440"/>
+        <circle cx="160" cy="20" r="4" fill="#132440"/>
+
+        <circle cx="240" cy="20" r="4" fill="#FDB5CE"/>
+        <circle cx="240" cy="20" r="10" fill="none" stroke="#FDB5CE" stroke-width="1"/>
+      </svg>
+      <figcaption class="err__figure-cap">FIG. 404 — ROUTE TERMINUS</figcaption>
+    </figure>
+
+    <!-- rule -->
+    <span class="err__rule" aria-hidden="true"></span>
+
+    <!-- CONTENT -->
+    <h1 class="err__title">This route does not resolve.</h1>
+
+    <p class="err__lead">
+      The page you are looking for is not on the platform. It may have been
+      renamed, removed, or the link that brought you here may be out of date.
+    </p>
+
+    <!-- ACTIONS -->
+    <div class="err__actions">
+      <a class="btn btn--primary" href="index.html">
+        BACK TO HOME
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+
+      <button class="btn btn--ghost" id="goBack" type="button">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        GO BACK
+      </button>
+    </div>
+
+    <!-- META -->
+    <p class="err__meta">STACKLY PLATFORM · SALEM · TAMIL NADU · INDIA</p>
+
+  </div>
+</main>
+
+<script>
+/* ---------- Go Back with fallback ---------- */
+(function () {
+  "use strict";
+
+  var btn = document.getElementById("goBack");
+  if (!btn) return;
+
+  btn.addEventListener("click", function () {
+    if (window.history && window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = "index.html";
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

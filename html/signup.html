@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up — Stackly Enterprise Software Platform</title>
+    <meta name="description" content="Create a Stackly platform account.">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body class="auth-body">
+
+    <!-- ============================================================
+     BACK TO HOME CHIP
+     ============================================================ -->
+    <a class="back-chip" href="../index.html">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        <span>BACK TO HOME</span>
+    </a>
+
+    <main class="auth">
+
+        <div class="auth__grid">
+
+            <!-- ============================================================
+         FORM SIDE
+         ============================================================ -->
+            <section class="auth__form-side" aria-labelledby="signup-title">
+
+                <div class="auth__form-wrap">
+
+                    <a class="brand auth__brand" href="../index.html" aria-label="Stackly — home">
+                        <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+                       
+                    </a>
+
+                    <header class="auth__head">
+                        <p class="auth__label mono">
+                            <span class="sig-dot" aria-hidden="true"></span>
+                            NEW ACCOUNT
+                        </p>
+                        <h1 class="auth__title" id="signup-title">Create your workspace account.</h1>
+                    </header>
+
+                    <form class="auth__form" id="signupForm" novalidate>
+
+                        <!-- Name -->
+                        <div class="field" data-field="name">
+                            <label class="field__label" for="su-name">
+                                <span class="field__label-text mono">FULL NAME</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </label>
+                            <div class="field__control">
+                                <i class="fa-solid fa-user field__icon" aria-hidden="true"></i>
+                                <input class="field__input" type="text" id="su-name" name="name" autocomplete="name"
+                                    required aria-describedby="su-name-error">
+                            </div>
+                            <p class="field__error" id="su-name-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="field" data-field="email">
+                            <label class="field__label" for="su-email">
+                                <span class="field__label-text mono">WORK EMAIL</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </label>
+                            <div class="field__control">
+                                <i class="fa-solid fa-envelope field__icon" aria-hidden="true"></i>
+                                <input class="field__input" type="email" id="su-email" name="email" autocomplete="email"
+                                    required aria-describedby="su-email-error">
+                            </div>
+                            <p class="field__error" id="su-email-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="field" data-field="password">
+                            <label class="field__label" for="su-password">
+                                <span class="field__label-text mono">PASSWORD</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </label>
+                            <div class="field__control">
+                                <i class="fa-solid fa-lock field__icon" aria-hidden="true"></i>
+                                <input class="field__input field__input--pw" type="password" id="su-password"
+                                    name="password" autocomplete="new-password" required minlength="8"
+                                    aria-describedby="su-password-error su-password-hint">
+                                <button class="pw-toggle" type="button" id="pwToggleSu" data-target="su-password"
+                                    aria-label="Show password" aria-pressed="false">
+                                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <p class="field__hint" id="su-password-hint">
+                                At least 8 characters. Mixed case and a number recommended.
+                            </p>
+                            <p class="field__error" id="su-password-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Confirm password -->
+                        <div class="field" data-field="confirm">
+                            <label class="field__label" for="su-confirm">
+                                <span class="field__label-text mono">CONFIRM PASSWORD</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </label>
+                            <div class="field__control">
+                                <i class="fa-solid fa-lock field__icon" aria-hidden="true"></i>
+                                <input class="field__input field__input--pw" type="password" id="su-confirm"
+                                    name="confirm" autocomplete="new-password" required
+                                    aria-describedby="su-confirm-error">
+                                <button class="pw-toggle" type="button" id="pwToggleCf" data-target="su-confirm"
+                                    aria-label="Show password" aria-pressed="false">
+                                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <p class="field__error" id="su-confirm-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Terms -->
+                        <label class="consent">
+                            <input type="checkbox" id="su-terms" name="terms" required>
+                            <span>
+                                I understand terms & rules.
+                            </span>
+                        </label>
+
+                        <p class="field__error" id="su-terms-error" data-error hidden></p>
+
+                        <!-- Submit -->
+                        <button class="btn btn--primary auth__submit" type="submit">
+                            CREATE ACCOUNT <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+
+ 
+
+                    </form>
+
+                    <p class="auth__alt">
+                        Already have an account?
+                        <a class="auth__alt-link" href="login.html">
+                            Sign in <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- ============================================================
+         VISUAL SIDE
+         ============================================================ -->
+            <aside class="auth__visual-side" aria-hidden="true">
+
+                <div class="auth__viz">
+
+                    <p class="auth__viz-cap mono">FIG. SIGNUP — ACCOUNT LIFECYCLE</p>
+
+                    <svg class="auth__viz-svg" viewBox="0 0 440 480" role="img"
+                        aria-label="Diagram showing account creation, activation at first sign-in, and role assignment">
+                        <defs>
+                            <pattern id="suGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+                                <path d="M32 0H0V32" fill="none" stroke="rgba(246,248,250,.06)" stroke-width="1" />
+                            </pattern>
+                        </defs>
+
+                        <rect width="440" height="480" fill="url(#suGrid)" />
+
+                        <!-- registration -->
+                        <rect class="sv-node" x="120" y="40" width="200" height="56" />
+                        <text class="sv-label" x="220" y="68" text-anchor="middle">REGISTRATION</text>
+                        <text class="sv-sub" x="220" y="84" text-anchor="middle">name · email · password</text>
+
+                        <!-- pending -->
+                        <rect class="sv-node sv-node--accent" x="120" y="140" width="200" height="56" />
+                        <text class="sv-label" x="220" y="168" text-anchor="middle">PENDING</text>
+                        <text class="sv-sub" x="220" y="184" text-anchor="middle">no data stored</text>
+
+                        <!-- role assignment at sign-in -->
+                        <rect class="sv-node" x="120" y="244" width="200" height="56" />
+                        <text class="sv-label" x="220" y="272" text-anchor="middle">FIRST SIGN-IN</text>
+                        <text class="sv-sub" x="220" y="288" text-anchor="middle">role chosen at login</text>
+
+                        <!-- split into two consoles -->
+                        <line class="sv-line" x1="220" y1="96" x2="220" y2="140" />
+                        <line class="sv-line" x1="220" y1="196" x2="220" y2="244" />
+                        <line class="sv-line" x1="220" y1="300" x2="220" y2="340" />
+                        <line class="sv-line" x1="220" y1="340" x2="80" y2="340" />
+                        <line class="sv-line" x1="220" y1="340" x2="360" y2="340" />
+                        <line class="sv-line" x1="80" y1="340" x2="80" y2="380" />
+                        <line class="sv-line" x1="360" y1="340" x2="360" y2="380" />
+
+                        <rect class="sv-node" x="30" y="380" width="100" height="48" />
+                        <rect class="sv-node" x="310" y="380" width="100" height="48" />
+                        <text class="sv-label sv-label--sm" x="80" y="402" text-anchor="middle">USER</text>
+                        <text class="sv-sub" x="80" y="418" text-anchor="middle">workspace</text>
+                        <text class="sv-label sv-label--sm" x="360" y="402" text-anchor="middle">ADMIN</text>
+                        <text class="sv-sub" x="360" y="418" text-anchor="middle">control plane</text>
+                    </svg>
+
+                    <ul class="auth__viz-list">
+                        <li>
+                            <span class="mono">PERSISTENCE</span>
+                            <span>No account data is written to this demonstration</span>
+                        </li>
+                        <li>
+                            <span class="mono">ROLE</span>
+                            <span>Chosen at sign-in, not at registration</span>
+                        </li>
+                        <li>
+                            <span class="mono">SESSION</span>
+                            <span>Created only when a role is selected</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <script>
+        /* ---------- Password visibility toggles (multiple) ---------- */
+        (function () {
+            "use strict";
+
+            var toggles = document.querySelectorAll(".pw-toggle[data-target]");
+
+            for (var i = 0; i < toggles.length; i++) {
+                (function (btn) {
+                    var targetId = btn.getAttribute("data-target");
+                    var input = document.getElementById(targetId);
+                    if (!input) return;
+
+                    btn.addEventListener("click", function () {
+                        var showing = input.getAttribute("type") === "text";
+                        input.setAttribute("type", showing ? "password" : "text");
+                        btn.setAttribute("aria-pressed", showing ? "false" : "true");
+                        btn.setAttribute("aria-label", showing ? "Show password" : "Hide password");
+                        var icon = btn.querySelector("i");
+                        if (icon) {
+                            icon.classList.toggle("fa-eye", showing);
+                            icon.classList.toggle("fa-eye-slash", !showing);
+                        }
+                        input.focus();
+                    });
+                })(toggles[i]);
+            }
+        })();
+
+        /* ---------- Signup form ---------- */
+        (function () {
+            "use strict";
+
+            var form = document.getElementById("signupForm");
+            if (!form) return;
+
+            var nameField = form.querySelector('[data-field="name"]');
+            var emailField = form.querySelector('[data-field="email"]');
+            var pwField = form.querySelector('[data-field="password"]');
+            var confirmField = form.querySelector('[data-field="confirm"]');
+
+            var nameInput = form.querySelector("#su-name");
+            var emailInput = form.querySelector("#su-email");
+            var pwInput = form.querySelector("#su-password");
+            var confirmInput = form.querySelector("#su-confirm");
+            var termsInput = form.querySelector("#su-terms");
+            var termsError = form.querySelector("#su-terms-error");
+
+            function getError(field) { return field ? field.querySelector(".field__error") : null; }
+
+            function setError(field, msg) {
+                if (!field) return;
+                field.classList.add("has-error");
+                var err = getError(field);
+                if (err) { err.textContent = msg; err.hidden = false; }
+            }
+
+            function clearError(field) {
+                if (!field) return;
+                field.classList.remove("has-error");
+                var err = getError(field);
+                if (err) { err.textContent = ""; err.hidden = true; }
+            }
+
+            function clearAll() {
+                clearError(nameField);
+                clearError(emailField);
+                clearError(pwField);
+                clearError(confirmField);
+                if (termsError) { termsError.textContent = ""; termsError.hidden = true; }
+                if (termsInput) { termsInput.closest(".consent").classList.remove("has-error"); }
+            }
+
+            function isEmail(v) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(v).trim());
+            }
+
+            [nameInput, emailInput, pwInput, confirmInput].forEach(function (input) {
+                if (!input) return;
+                input.addEventListener("input", function () {
+                    clearError(input.closest(".field"));
+                });
+            });
+
+            if (termsInput) {
+                termsInput.addEventListener("change", function () {
+                    if (termsError) { termsError.textContent = ""; termsError.hidden = true; }
+                    termsInput.closest(".consent").classList.remove("has-error");
+                });
+            }
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                clearAll();
+
+                var ok = true;
+                var firstInvalid = null;
+
+                if (!nameInput.value.trim()) {
+                    setError(nameField, "Name is required.");
+                    ok = false; if (!firstInvalid) firstInvalid = nameInput;
+                } else if (nameInput.value.trim().length < 2) {
+                    setError(nameField, "Enter at least two characters.");
+                    ok = false; if (!firstInvalid) firstInvalid = nameInput;
+                }
+
+                if (!emailInput.value.trim()) {
+                    setError(emailField, "Email is required.");
+                    ok = false; if (!firstInvalid) firstInvalid = emailInput;
+                } else if (!isEmail(emailInput.value)) {
+                    setError(emailField, "Enter a valid email address.");
+                    ok = false; if (!firstInvalid) firstInvalid = emailInput;
+                }
+
+                if (!pwInput.value) {
+                    setError(pwField, "Password is required.");
+                    ok = false; if (!firstInvalid) firstInvalid = pwInput;
+                } else if (pwInput.value.length < 8) {
+                    setError(pwField, "Password must be at least 8 characters.");
+                    ok = false; if (!firstInvalid) firstInvalid = pwInput;
+                }
+
+                if (!confirmInput.value) {
+                    setError(confirmField, "Please confirm your password.");
+                    ok = false; if (!firstInvalid) firstInvalid = confirmInput;
+                } else if (confirmInput.value !== pwInput.value) {
+                    setError(confirmField, "Passwords do not match.");
+                    ok = false; if (!firstInvalid) firstInvalid = confirmInput;
+                }
+
+                if (termsInput && !termsInput.checked) {
+                    if (termsError) {
+                        termsError.textContent = "Please confirm the acknowledgement above.";
+                        termsError.hidden = false;
+                    }
+                    termsInput.closest(".consent").classList.add("has-error");
+                    ok = false;
+                    if (!firstInvalid) firstInvalid = termsInput;
+                }
+
+                if (!ok) {
+                    if (firstInvalid) { firstInvalid.focus(); }
+                    return;
+                }
+
+                /* Signup does not persist account data. */
+                form.reset();
+                clearAll();
+                window.location.href = "login.html";
+            });
+
+            form.addEventListener("reset", function () {
+                window.setTimeout(clearAll, 0);
+            });
+
+            /* bfcache: clear stale values */
+            window.addEventListener("pageshow", function (e) {
+                var nav = performance.getEntriesByType
+                    ? performance.getEntriesByType("navigation")[0]
+                    : null;
+                var isBack = e.persisted || (nav && nav.type === "back_forward");
+                if (isBack) {
+                    form.reset();
+                    clearAll();
+                }
+            });
+        })();
+    </script>
+
+</body>
+
+</html>

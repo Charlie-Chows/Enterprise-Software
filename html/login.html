@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login — Stackly Enterprise Software Platform</title>
+    <meta name="description" content="Sign in to the Stackly platform console.">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body class="auth-body">
+
+    <!-- ============================================================
+     BACK TO HOME CHIP
+     ============================================================ -->
+    <a class="back-chip" href="../index.html">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        <span>BACK TO HOME</span>
+    </a>
+
+    <main class="auth">
+
+        <div class="auth__grid">
+
+            <!-- ============================================================
+         FORM SIDE
+         ============================================================ -->
+            <section class="auth__form-side" aria-labelledby="login-title">
+
+                <div class="auth__form-wrap">
+
+                    <a class="brand auth__brand" href="../index.html" aria-label="Stackly — home">
+                        <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+                        
+                    </a>
+
+                    <header class="auth__head">
+                        <p class="auth__label mono">
+                            <span class="sig-dot" aria-hidden="true"></span>
+                            SECURE ACCESS
+                        </p>
+                        <h1 class="auth__title" id="login-title">Sign in to the console.</h1>
+
+                    </header>
+
+                    <form class="auth__form" id="loginForm" novalidate>
+
+                        <!-- Email -->
+                        <div class="field" data-field="email">
+                            <label class="field__label" for="login-email">
+                                <span class="field__label-text mono">EMAIL</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </label>
+                            <div class="field__control">
+                                <i class="fa-solid fa-envelope field__icon" aria-hidden="true"></i>
+                                <input class="field__input" type="email" id="login-email" name="email"
+                                    autocomplete="email" required aria-describedby="login-email-error">
+                            </div>
+                            <p class="field__error" id="login-email-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="field" data-field="password">
+                            <label class="field__label" for="login-password">
+                                <span class="field__label-text mono">PASSWORD</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </label>
+                            <div class="field__control">
+                                <i class="fa-solid fa-lock field__icon" aria-hidden="true"></i>
+                                <input class="field__input field__input--pw" type="password" id="login-password"
+                                    name="password" autocomplete="current-password" required
+                                    aria-describedby="login-password-error">
+                                <button class="pw-toggle" type="button" id="pwToggle" aria-label="Show password"
+                                    aria-pressed="false">
+                                    <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <p class="field__error" id="login-password-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Role (custom dropdown) -->
+                        <div class="field" data-field="role">
+                            <span class="field__label" id="role-label">
+                                <span class="field__label-text mono">ROLE</span>
+                                <span class="field__label-req mono">REQUIRED</span>
+                            </span>
+
+                            <div class="dropdown" id="roleDropdown">
+                                <button class="dropdown__trigger" type="button" id="roleTrigger" aria-haspopup="listbox"
+                                    aria-expanded="false" aria-labelledby="role-label roleTrigger">
+                                    <span class="dropdown__value" id="roleValue" data-value="user">Operator</span>
+                                    <i class="fa-solid fa-chevron-down dropdown__chev" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="dropdown__menu" role="listbox" aria-labelledby="role-label" id="roleListbox"
+                                    tabindex="-1">
+                                    <div class="dropdown__option is-selected" role="option" aria-selected="true"
+                                        data-value="user" tabindex="-1">
+                                        <span class="dropdown__option-name">Operator</span>
+                                        <span class="dropdown__option-desc mono">Workspace access</span>
+                                    </div>
+                                    <div class="dropdown__option" role="option" aria-selected="false" data-value="admin"
+                                        tabindex="-1">
+                                        <span class="dropdown__option-name">Administrator</span>
+                                        <span class="dropdown__option-desc mono">Control plane access</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="field__error" id="login-role-error" data-error hidden></p>
+                        </div>
+
+                        <!-- Row: remember + forgot -->
+                        <div class="auth__row">
+                            <label class="check">
+                                <input type="checkbox" id="login-remember" name="remember">
+                                <span>Remember this device</span>
+                            </label>
+                            <a class="auth__link" href="../404.html">Forgot password?</a>
+                        </div>
+
+                        <!-- Submit -->
+                        <button class="btn btn--primary auth__submit" type="submit">
+                            SIGN IN <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+
+                        <!-- Social Sign-in options -->
+                        <div class="auth__social">
+                            <a class="auth__social-btn" href="../404.html" aria-label="Sign in with GitHub">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a class="auth__social-btn" href="../404.html" aria-label="Sign in with Google">
+                                <i class="fa-brands fa-google" aria-hidden="true"></i>
+                            </a>
+                        </div>
+
+                    </form>
+
+                    <p class="auth__alt">
+                        No account yet?
+                        <a class="auth__alt-link" href="signup.html">
+                            Create one <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- ============================================================
+         VISUAL SIDE
+         ============================================================ -->
+            <aside class="auth__visual-side" aria-hidden="true">
+
+                <div class="auth__viz">
+
+                    <p class="auth__viz-cap mono">FIG. AUTH — ROLE RESOLUTION</p>
+
+                    <svg class="auth__viz-svg" viewBox="0 0 440 480" role="img"
+                        aria-label="Diagram showing a login resolving into two role-based consoles">
+                        <defs>
+                            <pattern id="authGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+                                <path d="M32 0H0V32" fill="none" stroke="rgba(246,248,250,.06)" stroke-width="1" />
+                            </pattern>
+                        </defs>
+
+                        <rect width="440" height="480" fill="url(#authGrid)" />
+
+                        <!-- input -->
+                        <rect class="av-node" x="140" y="40" width="160" height="56" />
+                        <text class="av-label" x="220" y="68" text-anchor="middle">CREDENTIALS</text>
+                        <text class="av-sub" x="220" y="84" text-anchor="middle">email · password</text>
+
+                        <!-- role resolution -->
+                        <rect class="av-node av-node--accent" x="140" y="140" width="160" height="56" />
+                        <text class="av-label" x="220" y="168" text-anchor="middle">ROLE RESOLUTION</text>
+                        <text class="av-sub" x="220" y="184" text-anchor="middle">user · admin</text>
+
+                        <!-- branch -->
+                        <line class="av-line" x1="220" y1="96" x2="220" y2="140" />
+                        <line class="av-line" x1="140" y1="196" x2="80" y2="196" />
+                        <line class="av-line" x1="80" y1="196" x2="80" y2="260" />
+                        <line class="av-line" x1="300" y1="196" x2="360" y2="196" />
+                        <line class="av-line" x1="360" y1="196" x2="360" y2="260" />
+
+                        <!-- user branch -->
+                        <rect class="av-node" x="30" y="260" width="100" height="48" />
+                        <text class="av-label av-label--sm" x="80" y="282" text-anchor="middle">USER</text>
+                        <text class="av-sub" x="80" y="298" text-anchor="middle">workspace</text>
+
+                        <!-- admin branch -->
+                        <rect class="av-node" x="310" y="260" width="100" height="48" />
+                        <text class="av-label av-label--sm" x="360" y="282" text-anchor="middle">ADMIN</text>
+                        <text class="av-sub" x="360" y="298" text-anchor="middle">control plane</text>
+
+                        <!-- merge to audit -->
+                        <line class="av-line" x1="80" y1="308" x2="80" y2="380" />
+                        <line class="av-line" x1="360" y1="308" x2="360" y2="380" />
+                        <line class="av-line" x1="80" y1="380" x2="360" y2="380" />
+
+                        <rect class="av-node av-node--dark" x="120" y="404" width="200" height="48" />
+                        <text class="av-label" x="220" y="426" text-anchor="middle">AUDIT RECORD</text>
+                        <text class="av-sub" x="220" y="442" text-anchor="middle">every session logged</text>
+                        <line class="av-line" x1="220" y1="380" x2="220" y2="404" />
+                    </svg>
+
+                    <ul class="auth__viz-list">
+                        <li>
+                            <span class="mono">ROLE</span>
+                            <span>Determines which console you enter</span>
+                        </li>
+                        <li>
+                            <span class="mono">SESSION</span>
+                            <span>Scoped, auditable, and revocable</span>
+                        </li>
+                        <li>
+                            <span class="mono">POLICY</span>
+                            <span>Every action resolves against a declared rule</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <script>
+        /* ---------- Password visibility toggle ---------- */
+        (function () {
+            "use strict";
+
+            var btn = document.getElementById("pwToggle");
+            var input = document.getElementById("login-password");
+            if (!btn || !input) return;
+
+            btn.addEventListener("click", function () {
+                var showing = input.getAttribute("type") === "text";
+                input.setAttribute("type", showing ? "password" : "text");
+                btn.setAttribute("aria-pressed", showing ? "false" : "true");
+                btn.setAttribute("aria-label", showing ? "Show password" : "Hide password");
+                var icon = btn.querySelector("i");
+                if (icon) {
+                    icon.classList.toggle("fa-eye", showing);
+                    icon.classList.toggle("fa-eye-slash", !showing);
+                }
+                input.focus();
+            });
+        })();
+
+        /* ---------- Custom role dropdown (listbox) ---------- */
+        (function () {
+            "use strict";
+
+            var root = document.getElementById("roleDropdown");
+            var trigger = document.getElementById("roleTrigger");
+            var listbox = document.getElementById("roleListbox");
+            var valueEl = document.getElementById("roleValue");
+            var field = document.querySelector('[data-field="role"]');
+            var options = listbox ? listbox.querySelectorAll('[role="option"]') : [];
+
+            if (!root || !trigger || !listbox || !valueEl) return;
+
+            var currentIndex = 0;
+            var open = false;
+
+            function setOpen(state) {
+                open = state;
+                root.classList.toggle("is-open", open);
+                trigger.setAttribute("aria-expanded", open ? "true" : "false");
+                if (open) {
+                    var sel = getSelectedIndex();
+                    if (sel > -1) { options[sel].focus(); }
+                }
+            }
+
+            function getSelectedIndex() {
+                for (var i = 0; i < options.length; i++) {
+                    if (options[i].getAttribute("aria-selected") === "true") return i;
+                }
+                return 0;
+            }
+
+            function select(index) {
+                if (index < 0 || index >= options.length) return;
+                for (var i = 0; i < options.length; i++) {
+                    var on = i === index;
+                    options[i].setAttribute("aria-selected", on ? "true" : "false");
+                    options[i].classList.toggle("is-selected", on);
+                }
+                var val = options[index].getAttribute("data-value");
+                var label = options[index].querySelector(".dropdown__option-name");
+                valueEl.setAttribute("data-value", val);
+                valueEl.textContent = label ? label.textContent : val;
+                currentIndex = index;
+
+                if (field) {
+                    field.classList.remove("has-error");
+                    var err = field.querySelector(".field__error");
+                    if (err) { err.textContent = ""; err.hidden = true; }
+                }
+
+                setOpen(false);
+                trigger.focus();
+            }
+
+            trigger.addEventListener("click", function () {
+                setOpen(!open);
+            });
+
+            trigger.addEventListener("keydown", function (e) {
+                if (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    if (!open) { setOpen(true); return; }
+                    var delta = (e.key === "ArrowDown" || e.key === " ") ? 1 : -1;
+                    currentIndex = (currentIndex + delta + options.length) % options.length;
+                    options[currentIndex].focus();
+                }
+                if (e.key === "Escape" && open) {
+                    e.preventDefault();
+                    setOpen(false);
+                }
+            });
+
+            for (var i = 0; i < options.length; i++) {
+                (function (opt, idx) {
+                    opt.addEventListener("click", function () { select(idx); });
+
+                    opt.addEventListener("keydown", function (e) {
+                        if (e.key === "ArrowDown") {
+                            e.preventDefault();
+                            var n = (idx + 1) % options.length;
+                            options[n].focus();
+                            currentIndex = n;
+                        } else if (e.key === "ArrowUp") {
+                            e.preventDefault();
+                            var p = (idx - 1 + options.length) % options.length;
+                            options[p].focus();
+                            currentIndex = p;
+                        } else if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            select(idx);
+                        } else if (e.key === "Escape") {
+                            e.preventDefault();
+                            setOpen(false);
+                            trigger.focus();
+                        } else if (e.key === "Tab") {
+                            setOpen(false);
+                        }
+                    });
+                })(options[i], i);
+            }
+
+            document.addEventListener("click", function (e) {
+                if (open && !root.contains(e.target)) { setOpen(false); }
+            });
+        })();
+
+        /* ---------- Login form ---------- */
+        (function () {
+            "use strict";
+
+            var form = document.getElementById("loginForm");
+            if (!form) return;
+
+            var emailField = form.querySelector('[data-field="email"]');
+            var pwField = form.querySelector('[data-field="password"]');
+            var roleField = form.querySelector('[data-field="role"]');
+
+            var emailInput = form.querySelector("#login-email");
+            var pwInput = form.querySelector("#login-password");
+            var roleValue = form.querySelector("#roleValue");
+
+            function getError(field) { return field ? field.querySelector(".field__error") : null; }
+
+            function setError(field, msg) {
+                if (!field) return;
+                field.classList.add("has-error");
+                var err = getError(field);
+                if (err) { err.textContent = msg; err.hidden = false; }
+            }
+
+            function clearError(field) {
+                if (!field) return;
+                field.classList.remove("has-error");
+                var err = getError(field);
+                if (err) { err.textContent = ""; err.hidden = true; }
+            }
+
+            function isEmail(v) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(v).trim());
+            }
+
+            emailInput.addEventListener("input", function () { clearError(emailField); });
+            pwInput.addEventListener("input", function () { clearError(pwField); });
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                clearError(emailField);
+                clearError(pwField);
+                clearError(roleField);
+
+                var ok = true;
+                var firstInvalid = null;
+
+                if (!emailInput.value.trim()) {
+                    setError(emailField, "Email is required.");
+                    ok = false; if (!firstInvalid) firstInvalid = emailInput;
+                } else if (!isEmail(emailInput.value)) {
+                    setError(emailField, "Enter a valid email address.");
+                    ok = false; if (!firstInvalid) firstInvalid = emailInput;
+                }
+
+                if (!pwInput.value.trim()) {
+                    setError(pwField, "Password is required.");
+                    ok = false; if (!firstInvalid) firstInvalid = pwInput;
+                }
+
+                var role = roleValue ? roleValue.getAttribute("data-value") : "user";
+                if (!role || (role !== "user" && role !== "admin")) {
+                    setError(roleField, "Select a role.");
+                    ok = false;
+                }
+
+                if (!ok) {
+                    if (firstInvalid) { firstInvalid.focus(); }
+                    return;
+                }
+
+                var email = emailInput.value.trim();
+
+                try {
+                    localStorage.setItem("stackly_user_email", email);
+                    localStorage.setItem("stackly_user_role", role);
+                } catch (err) { /* storage unavailable — continue anyway */ }
+
+                window.location.href = (role === "admin") ? "admin.html" : "user.html";
+            });
+
+            /* bfcache: clear stale values */
+            window.addEventListener("pageshow", function (e) {
+                var nav = performance.getEntriesByType
+                    ? performance.getEntriesByType("navigation")[0]
+                    : null;
+                var isBack = e.persisted || (nav && nav.type === "back_forward");
+                if (isBack) {
+                    form.reset();
+                    clearError(emailField);
+                    clearError(pwField);
+                    clearError(roleField);
+                }
+            });
+        })();
+    </script>
+
+</body>
+
+</html>

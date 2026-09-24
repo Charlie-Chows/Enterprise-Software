@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Stackly Enterprise Software Platform</title>
+<meta name="description" content="Stackly is an engineering platform for teams that run critical operations. Learn about our origin, mandate, principles, and how we work.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../global.css">
+<link rel="stylesheet" href="../css/about.css">
+
+<script>
+  document.documentElement.classList.add('js-ready');
+  window.__stacklyRevealReady = false;
+  window.setTimeout(function () {
+    if (!window.__stacklyRevealReady) {
+      var n = document.querySelectorAll('[data-anim]');
+      for (var i = 0; i < n.length; i++) { n[i].classList.add('is-in'); }
+    }
+  }, 1200);
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+
+    <a class="brand" href="../index.html" aria-label="Stackly — home">
+      <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+      
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="../index.html">Home</a></li>
+        <li><a class="nav__link is-active" href="about.html" aria-current="page">About</a></li>
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="blog.html">Blog</a></li>
+        <li><a class="nav__link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--chip header__login" href="login.html">Login</a>
+
+      <button class="menu-btn" id="menuBtn" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+        <span class="menu-btn__label">MENU</span>
+        <span class="menu-btn__lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============================================================
+     FULL-SCREEN NAVIGATION OVERLAY
+     ============================================================ -->
+<div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Site navigation" aria-hidden="true">
+
+  <div class="overlay__top container">
+    <a class="brand on-dark" href="../index.html" aria-label="Stackly — home">
+      <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+      
+    </a>
+    <button class="overlay__close" id="menuClose" type="button" aria-label="Close menu">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <nav class="overlay__nav container" aria-label="Overlay">
+    <p class="overlay__eyebrow mono">[ NAVIGATION ]</p>
+    <ul class="overlay__list">
+      <li class="overlay__item" style="--i:0"><a href="../index.html"><span class="overlay__idx">01</span>Home</a></li>
+      <li class="overlay__item" style="--i:1"><a href="about.html"><span class="overlay__idx">02</span>About</a></li>
+      <li class="overlay__item" style="--i:2"><a href="services.html"><span class="overlay__idx">03</span>Services</a></li>
+      <li class="overlay__item" style="--i:3"><a href="blog.html"><span class="overlay__idx">04</span>Blog</a></li>
+      <li class="overlay__item" style="--i:4"><a href="contact.html"><span class="overlay__idx">05</span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="overlay__foot container">
+    <a class="btn btn--blush overlay__login" href="login.html">
+      LOGIN <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+    </a>
+    <p class="overlay__meta mono">STACKLY PLATFORM · SALEM, IN</p>
+  </div>
+
+</div>
+
+<main id="main">
+
+  <!-- ============================================================
+       HERO — full-screen editorial
+       ============================================================ -->
+  <section class="about-hero grid-bg" aria-labelledby="about-hero-title">
+    <div class="container about-hero__inner">
+
+      <p class="about-hero__eyebrow mono" data-anim="fade">
+        <span class="sig-dot" aria-hidden="true"></span>
+        ABOUT STACKLY
+      </p>
+
+      <h1 class="about-hero__title" id="about-hero-title">
+        <span data-anim="up" style="--i:0">The discipline behind</span>
+        <span data-anim="up" style="--i:1">the platform.</span>
+      </h1>
+
+      <p class="about-hero__lead" data-anim="up" style="--i:2">
+        Stackly is built by people who have run operations, not only modelled them.
+        We write software the way we would want it handed to us at 3am — explicit,
+        reversible, and readable without a phone call.
+      </p>
+
+      <dl class="about-hero__meta" data-anim="up" style="--i:3">
+        <div class="about-hero__meta-row">
+          <dt>DISCIPLINE</dt>
+          <dd>Systems engineering</dd>
+        </div>
+        <div class="about-hero__meta-row">
+          <dt>PRACTICE</dt>
+          <dd>Platform software</dd>
+        </div>
+        <div class="about-hero__meta-row">
+          <dt>BASE</dt>
+          <dd>Salem, Tamil Nadu</dd>
+        </div>
+        <div class="about-hero__meta-row">
+          <dt>REACH</dt>
+          <dd>Multi-region delivery</dd>
+        </div>
+      </dl>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ORIGIN — sticky narrative
+       ============================================================ -->
+  <section class="section origin" aria-labelledby="origin-title">
+    <div class="container origin__grid">
+
+      <div class="origin__side">
+        <p class="sec-label" data-anim="fade">ORIGIN</p>
+        <h2 class="sec-title" id="origin-title" data-anim="up">
+          A practice,<br>not a product.
+        </h2>
+        <p class="origin__note mono" data-anim="fade">
+          FIG. A — NARRATIVE INDEX
+        </p>
+      </div>
+
+      <ol class="origin__track">
+
+        <li class="origin__item" data-anim="up" style="--i:0">
+          <span class="origin__marker mono">01</span>
+          <h3 class="origin__heading">The problem was never the software.</h3>
+          <p>
+            Every operations team we met had capable tools. What they lacked was
+            a shared model of how those tools related to each other. Diagrams
+            were out of date, permissions were implicit, and every new hire
+            learned the system by asking the person beside them.
+          </p>
+        </li>
+
+        <li class="origin__item" data-anim="up" style="--i:1">
+          <span class="origin__marker mono">02</span>
+          <h3 class="origin__heading">So we started with the diagram.</h3>
+          <p>
+            The first thing we built was not a service — it was a spec. A single
+            document that described services, contracts, ownership, and the
+            rules that governed access between them. It was versioned, reviewed,
+            and diffed like any other engineering artifact.
+          </p>
+        </li>
+
+        <li class="origin__item" data-anim="up" style="--i:2">
+          <span class="origin__marker mono">03</span>
+          <h3 class="origin__heading">The platform grew out of it.</h3>
+          <p>
+            Once the spec was authoritative, the platform's job became clear:
+            keep it honest. Modules read the spec. Policies resolve against it.
+            Environments are provisioned from it. Nothing drifts without being
+            visible in a diff.
+          </p>
+        </li>
+
+        <li class="origin__item" data-anim="up" style="--i:3">
+          <span class="origin__marker mono">04</span>
+          <h3 class="origin__heading">The rest is discipline.</h3>
+          <p>
+            Shipping platform software for critical operations is not a
+            creativity problem. It is a restraint problem — knowing what to
+            leave out, when to make something explicit, and when a simpler
+            primitive will outlast a clever abstraction.
+          </p>
+        </li>
+
+      </ol>
+
+    </div>
+  </section>
+
+
+
+  <!-- ============================================================
+       PRINCIPLES OF PRACTICE — expandable
+       ============================================================ -->
+  <section class="section practice" aria-labelledby="practice-title">
+    <div class="container">
+
+      <header class="sec-head sec-head--split">
+        <div>
+          <p class="sec-label" data-anim="fade">PRINCIPLES OF PRACTICE</p>
+          <h2 class="sec-title" id="practice-title" data-anim="up">
+            Five rules we do not negotiate.
+          </h2>
+        </div>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          Each principle is written as a rule because it must survive
+          disagreement. Expand to read the reasoning behind it.
+        </p>
+      </header>
+
+      <div class="practice__list">
+
+        <details class="practice__item" data-anim="up" style="--i:0" open>
+          <summary class="practice__summary">
+            <span class="practice__num mono">P-01</span>
+            <span class="practice__name">Explicit over implicit</span>
+            <span class="practice__toggle" aria-hidden="true">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </summary>
+          <div class="practice__body">
+            <p>
+              If a system depends on something — a credential, a network path,
+              an assumed data shape — that dependency is written down and
+              versioned. Implicit knowledge is a failure mode disguised as
+              efficiency. The cost of writing it down is a few minutes; the cost
+              of not writing it down is measured in hours of on-call time.
+            </p>
+          </div>
+        </details>
+
+        <details class="practice__item" data-anim="up" style="--i:1">
+          <summary class="practice__summary">
+            <span class="practice__num mono">P-02</span>
+            <span class="practice__name">Reversible over clever</span>
+            <span class="practice__toggle" aria-hidden="true">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </summary>
+          <div class="practice__body">
+            <p>
+              Any change we ship comes with a rehearsed path back. That path is
+              tested in the same environment where the change will run — not
+              in a laptop approximation. Clever solutions that cannot be undone
+              are not solutions; they are commitments that outlive the problem.
+            </p>
+          </div>
+        </details>
+
+        <details class="practice__item" data-anim="up" style="--i:2">
+          <summary class="practice__summary">
+            <span class="practice__num mono">P-03</span>
+            <span class="practice__name">Measured over assumed</span>
+            <span class="practice__toggle" aria-hidden="true">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </summary>
+          <div class="practice__body">
+            <p>
+              If a claim cannot be measured on the platform itself, it does not
+              belong on a slide. We publish the measurement method alongside the
+              result. Anyone reading our numbers should be able to reproduce
+              them without asking us how.
+            </p>
+          </div>
+        </details>
+
+        <details class="practice__item" data-anim="up" style="--i:3">
+          <summary class="practice__summary">
+            <span class="practice__num mono">P-04</span>
+            <span class="practice__name">Readable by the next operator</span>
+            <span class="practice__toggle" aria-hidden="true">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </summary>
+          <div class="practice__body">
+            <p>
+              Every artifact — spec, policy, runbook — is written for the person
+              who will read it in two years, at 3am, with no context. If a
+              document needs a call to understand, the document is wrong, not
+              the reader.
+            </p>
+          </div>
+        </details>
+
+        <details class="practice__item" data-anim="up" style="--i:4">
+          <summary class="practice__summary">
+            <span class="practice__num mono">P-05</span>
+            <span class="practice__name">Own the whole diagram</span>
+            <span class="practice__toggle" aria-hidden="true">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+          </summary>
+          <div class="practice__body">
+            <p>
+              Partial ownership creates partial accountability. If we take on a
+              domain, we take on its edges, its dependencies, and its failure
+              modes. We do not accept boundaries that exist only to make the
+              diagram prettier.
+            </p>
+          </div>
+        </details>
+
+      </div>
+
+      <p class="note" data-anim="fade">Principles describe our practice. They are not a contractual commitment.</p>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MILESTONES — timeline
+       ============================================================ -->
+  <section class="section section--dark milestones" aria-labelledby="milestones-title">
+    <div class="container">
+
+      <header class="sec-head sec-head--dark">
+        <p class="sec-label" data-anim="fade">MILESTONES</p>
+        <h2 class="sec-title" id="milestones-title" data-anim="up">
+          What shipped, and when.
+        </h2>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          A structural view of platform releases. Years are placeholder markers
+          for layout purposes — not a claim of operating history.
+        </p>
+      </header>
+
+      <div class="milestones__wrap">
+        <div class="milestones__spine" aria-hidden="true">
+          <svg viewBox="0 0 2 1000" preserveAspectRatio="none" class="milestones__spine-svg">
+            <line id="spineLine" x1="1" y1="0" x2="1" y2="1000"
+                  stroke="#3B9797" stroke-width="2"/>
+          </svg>
+        </div>
+
+        <ol class="milestones__list">
+
+          <li class="milestone" data-anim="up" style="--i:0">
+            <span class="milestone__year mono">T-04</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Topology spec becomes authoritative</h3>
+              <p>The platform stops reading configuration and starts reading the model. Every service declares itself in one place.</p>
+            </div>
+          </li>
+
+          <li class="milestone" data-anim="up" style="--i:1">
+            <span class="milestone__year mono">T-03</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Policy engine split from orchestration</h3>
+              <p>Access decisions become their own surface, versioned separately and evaluable without a running environment.</p>
+            </div>
+          </li>
+
+          <li class="milestone" data-anim="up" style="--i:2">
+            <span class="milestone__year mono">T-02</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Multi-region control plane</h3>
+              <p>The same model provisions environments across regions. Region-specific drift is detected and surfaced, not tolerated.</p>
+            </div>
+          </li>
+
+          <li class="milestone" data-anim="up" style="--i:3">
+            <span class="milestone__year mono">T-01</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">Audit and lineage as a first-class surface</h3>
+              <p>Every policy decision, every deployment, every reconciliation is written to a queryable, exportable log.</p>
+            </div>
+          </li>
+
+          <li class="milestone" data-anim="up" style="--i:4">
+            <span class="milestone__year mono">T-00</span>
+            <div class="milestone__body">
+              <h3 class="milestone__title">First topology model built for an external team</h3>
+              <p>The practice left the whiteboard. The platform's job description became clear from there.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+
+      <p class="note note--dark" data-anim="fade">Timeline is illustrative. Markers do not represent actual release dates.</p>
+
+    </div>
+  </section>
+
+
+
+  <!-- ============================================================
+       ENGINEERING DISCIPLINE — spec blocks
+       ============================================================ -->
+  <section class="section section--dim discipline" aria-labelledby="discipline-title">
+    <div class="container">
+
+      <header class="sec-head">
+        <p class="sec-label" data-anim="fade">ENGINEERING DISCIPLINE</p>
+        <h2 class="sec-title" id="discipline-title" data-anim="up">
+          How the work is done.
+        </h2>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          Our engineering practice, expressed as a technical specification
+          rather than a list of values.
+        </p>
+      </header>
+
+      <div class="discipline__grid">
+
+        <article class="spec-block" data-anim="up" style="--i:0">
+          <p class="spec-block__id mono">SPEC-01</p>
+          <h3 class="spec-block__title">Modelling</h3>
+          <dl class="spec-block__rows">
+            <div><dt>INPUT</dt><dd>Estate map, ownership, known constraints</dd></div>
+            <div><dt>OUTPUT</dt><dd>Versioned topology spec</dd></div>
+            <div><dt>REVIEW</dt><dd>Two named reviewers, both sign</dd></div>
+            <div><dt>REJECTED</dt><dd>Unmodelled assumptions, undocumented dependencies</dd></div>
+          </dl>
+        </article>
+
+        <article class="spec-block" data-anim="up" style="--i:1">
+          <p class="spec-block__id mono">SPEC-02</p>
+          <h3 class="spec-block__title">Building</h3>
+          <dl class="spec-block__rows">
+            <div><dt>INPUT</dt><dd>Approved topology spec</dd></div>
+            <div><dt>OUTPUT</dt><dd>Reproducible environments, tagged by revision</dd></div>
+            <div><dt>REVIEW</dt><dd>Peer review before merge, no exceptions</dd></div>
+            <div><dt>REJECTED</dt><dd>Manual state outside declared specs</dd></div>
+          </dl>
+        </article>
+
+        <article class="spec-block" data-anim="up" style="--i:2">
+          <p class="spec-block__id mono">SPEC-03</p>
+          <h3 class="spec-block__title">Releasing</h3>
+          <dl class="spec-block__rows">
+            <div><dt>INPUT</dt><dd>Tested change with recorded diff</dd></div>
+            <div><dt>OUTPUT</dt><dd>Rollforward or rollback, both rehearsed</dd></div>
+            <div><dt>REVIEW</dt><dd>Sign-off from the on-call lead</dd></div>
+            <div><dt>REJECTED</dt><dd>Any change without a written failure mode</dd></div>
+          </dl>
+        </article>
+
+        <article class="spec-block" data-anim="up" style="--i:3">
+          <p class="spec-block__id mono">SPEC-04</p>
+          <h3 class="spec-block__title">Operating</h3>
+          <dl class="spec-block__rows">
+            <div><dt>INPUT</dt><dd>Runbook, dashboards, escalation path</dd></div>
+            <div><dt>OUTPUT</dt><dd>Incident notes, review cadence, model updates</dd></div>
+            <div><dt>REVIEW</dt><dd>Post-incident review within five working days</dd></div>
+            <div><dt>REJECTED</dt><dd>Fixes without a corresponding spec change</dd></div>
+          </dl>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GOVERNANCE POSTURE — interactive tabs
+       ============================================================ -->
+  <section class="section governance" aria-labelledby="governance-title">
+    <div class="container">
+
+      <header class="sec-head">
+        <p class="sec-label" data-anim="fade">GOVERNANCE POSTURE</p>
+        <h2 class="sec-title" id="governance-title" data-anim="up">
+          How control is held.
+        </h2>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          Four dimensions of governance, each with a defined owner and an
+          auditable trace. Select to view the posture for each.
+        </p>
+      </header>
+
+      <div class="governance__grid">
+
+        <div class="governance__tabs" role="tablist" aria-label="Governance dimensions" data-anim="left">
+          <button class="gov-tab is-active" role="tab" aria-selected="true"  data-dim="access"    id="govtab-access">
+            <span class="gov-tab__idx mono">01</span>
+            <span class="gov-tab__label">Access</span>
+          </button>
+          <button class="gov-tab" role="tab" aria-selected="false" data-dim="change"    id="govtab-change">
+            <span class="gov-tab__idx mono">02</span>
+            <span class="gov-tab__label">Change</span>
+          </button>
+          <button class="gov-tab" role="tab" aria-selected="false" data-dim="data"      id="govtab-data">
+            <span class="gov-tab__idx mono">03</span>
+            <span class="gov-tab__label">Data</span>
+          </button>
+          <button class="gov-tab" role="tab" aria-selected="false" data-dim="incident"  id="govtab-incident">
+            <span class="gov-tab__idx mono">04</span>
+            <span class="gov-tab__label">Incident</span>
+          </button>
+        </div>
+
+        <div class="governance__panel" id="govPanel" role="tabpanel" aria-labelledby="govtab-access" tabindex="0" data-anim="right">
+
+          <div class="gov-content is-active" data-dim="access">
+            <p class="gov-content__id mono">DIM-01 · ACCESS</p>
+            <h3 class="gov-content__title">Every decision is declarative.</h3>
+            <p class="gov-content__body">
+              Access is resolved from a versioned policy set. There are no
+              backdoor grants, no shared service accounts, and no implicit
+              inheritance from directory group names. Every resolution is
+              logged with the rule that fired.
+            </p>
+            <ul class="gov-content__list">
+              <li><span class="mono">OWNER</span> Platform Security</li>
+              <li><span class="mono">REVIEW</span> Quarterly, plus on role change</li>
+              <li><span class="mono">TRACE</span> Per-decision, exportable</li>
+            </ul>
+          </div>
+
+          <div class="gov-content" data-dim="change">
+            <p class="gov-content__id mono">DIM-02 · CHANGE</p>
+            <h3 class="gov-content__title">Change is a typed event.</h3>
+            <p class="gov-content__body">
+              Every modification to the platform — a policy, an environment, a
+              contract — enters through the same change process. No direct
+              edits. The record of a change is durable, searchable, and
+              survives the person who made it.
+            </p>
+            <ul class="gov-content__list">
+              <li><span class="mono">OWNER</span> Platform Engineering</li>
+              <li><span class="mono">REVIEW</span> Pre-merge, two reviewers</li>
+              <li><span class="mono">TRACE</span> Immutable change log</li>
+            </ul>
+          </div>
+
+          <div class="gov-content" data-dim="data">
+            <p class="gov-content__id mono">DIM-03 · DATA</p>
+            <h3 class="gov-content__title">Data carries its own lineage.</h3>
+            <p class="gov-content__body">
+              Every record that enters the platform is stamped with its source,
+              its contract version, and the policy under which it was accepted.
+              Storage boundaries are declared, not inferred. Exports inherit
+              the same access rules as the interface.
+            </p>
+            <ul class="gov-content__list">
+              <li><span class="mono">OWNER</span> Data Platform</li>
+              <li><span class="mono">REVIEW</span> On contract revision</li>
+              <li><span class="mono">TRACE</span> Full lineage, per record</li>
+            </ul>
+          </div>
+
+          <div class="gov-content" data-dim="incident">
+            <p class="gov-content__id mono">DIM-04 · INCIDENT</p>
+            <h3 class="gov-content__title">Incidents produce artifacts.</h3>
+            <p class="gov-content__body">
+              An incident is not closed when the service is back up. It is
+              closed when the model has been updated, the runbook reflects the
+              change, and the review has been written down where the next
+              operator can find it.
+            </p>
+            <ul class="gov-content__list">
+              <li><span class="mono">OWNER</span> Reliability</li>
+              <li><span class="mono">REVIEW</span> Within five working days</li>
+              <li><span class="mono">TRACE</span> Published review, indexed</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORKPLACES — gallery wall
+       ============================================================ -->
+  <section class="section section--dim workplaces" aria-labelledby="workplaces-title">
+    <div class="container">
+
+      <header class="sec-head">
+        <p class="sec-label" data-anim="fade">WORKPLACES</p>
+        <h2 class="sec-title" id="workplaces-title" data-anim="up">
+          Where the work happens.
+        </h2>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          Schematic representations of the environments and rituals that
+          structure our practice. Not photographs.
+        </p>
+      </header>
+
+      <div class="workplaces__wall">
+
+        <figure class="work-tile work-tile--wide" data-anim="up" style="--i:0">
+          <div class="work-tile__canvas work-tile__canvas--desk">
+            <span class="work-desk"></span>
+            <span class="work-monitor"></span>
+            <span class="work-monitor work-monitor--sm"></span>
+            <span class="work-note"></span>
+          </div>
+          <figcaption class="work-tile__cap">
+            <span class="mono">01 — STUDIO FLOOR</span>
+            <span>Drafting, review, and pairing</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-tile" data-anim="up" style="--i:1">
+          <div class="work-tile__canvas work-tile__canvas--board">
+            <span class="work-board"></span>
+            <span class="work-board work-board--sm"></span>
+            <span class="work-marker"></span>
+          </div>
+          <figcaption class="work-tile__cap">
+            <span class="mono">02 — REVIEW WALL</span>
+            <span>Topology walkthroughs</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-tile" data-anim="up" style="--i:2">
+          <div class="work-tile__canvas work-tile__canvas--ops">
+            <span class="work-rack"></span>
+            <span class="work-rack work-rack--2"></span>
+            <span class="work-rack work-rack--3"></span>
+            <span class="work-ops-line"></span>
+          </div>
+          <figcaption class="work-tile__cap">
+            <span class="mono">03 — CONTROL ROOM</span>
+            <span>Incident rehearsal and drills</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-tile" data-anim="up" style="--i:3">
+          <div class="work-tile__canvas work-tile__canvas--library">
+            <span class="work-shelf"></span>
+            <span class="work-shelf work-shelf--2"></span>
+            <span class="work-shelf work-shelf--3"></span>
+            <span class="work-shelf work-shelf--4"></span>
+          </div>
+          <figcaption class="work-tile__cap">
+            <span class="mono">04 — ARCHIVE</span>
+            <span>Runbooks, specs, incident reviews</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-tile work-tile--tall" data-anim="up" style="--i:4">
+          <div class="work-tile__canvas work-tile__canvas--bench">
+            <span class="work-bench"></span>
+            <span class="work-tool"></span>
+            <span class="work-tool work-tool--2"></span>
+            <span class="work-tool work-tool--3"></span>
+            <span class="work-tool work-tool--4"></span>
+          </div>
+          <figcaption class="work-tile__cap">
+            <span class="mono">05 — BENCH</span>
+            <span>Prototype and integration harness</span>
+          </figcaption>
+        </figure>
+
+        <figure class="work-tile" data-anim="up" style="--i:5">
+          <div class="work-tile__canvas work-tile__canvas--quiet">
+            <span class="work-quiet"></span>
+            <span class="work-quiet work-quiet--2"></span>
+          </div>
+          <figcaption class="work-tile__cap">
+            <span class="mono">06 — QUIET ROOM</span>
+            <span>Writing, drafting, deep work</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <p class="note" data-anim="fade">Schematic surfaces. Illustrative composition only — no photographs of real locations.</p>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTORS SERVED — layered cards
+       ============================================================ -->
+  <section class="section sectors" aria-labelledby="sectors-title">
+    <div class="container">
+
+      <header class="sec-head">
+        <p class="sec-label" data-anim="fade">SECTORS SERVED</p>
+        <h2 class="sec-title" id="sectors-title" data-anim="up">
+          Where the discipline fits.
+        </h2>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          Sectors where the operational cost of implicit systems is highest.
+          Cards describe capability fit — not client engagements.
+        </p>
+      </header>
+
+      <div class="sectors__stack">
+
+        <article class="sector" data-anim="up" style="--i:0">
+          <span class="sector__idx mono">S-01</span>
+          <h3 class="sector__name">Financial Operations</h3>
+          <p class="sector__body">
+            High change frequency, strict audit requirements, and no tolerance
+            for silent failure. Policy and change tracing are the primary
+            surfaces here.
+          </p>
+          <ul class="sector__tags">
+            <li class="mono">AUDIT</li>
+            <li class="mono">POLICY</li>
+            <li class="mono">REVERSIBILITY</li>
+          </ul>
+        </article>
+
+        <article class="sector" data-anim="up" style="--i:1">
+          <span class="sector__idx mono">S-02</span>
+          <h3 class="sector__name">Logistics &amp; Supply</h3>
+          <p class="sector__body">
+            Long-lived integration surfaces with a distributed edge. Contract
+            validation and cross-region reconciliation carry the weight.
+          </p>
+          <ul class="sector__tags">
+            <li class="mono">EDGE</li>
+            <li class="mono">CONTRACTS</li>
+            <li class="mono">MULTI-REGION</li>
+          </ul>
+        </article>
+
+        <article class="sector" data-anim="up" style="--i:2">
+          <span class="sector__idx mono">S-03</span>
+          <h3 class="sector__name">Healthcare Operations</h3>
+          <p class="sector__body">
+            Access decisions carry real-world consequence. Explicit rules,
+            readable by non-engineers, are non-negotiable.
+          </p>
+          <ul class="sector__tags">
+            <li class="mono">ACCESS</li>
+            <li class="mono">LINEAGE</li>
+            <li class="mono">READABILITY</li>
+          </ul>
+        </article>
+
+        <article class="sector" data-anim="up" style="--i:3">
+          <span class="sector__idx mono">S-04</span>
+          <h3 class="sector__name">Public Infrastructure</h3>
+          <p class="sector__body">
+            Long-lived systems, multi-generational handover, and public
+            accountability. The model must outlast the team that wrote it.
+          </p>
+          <ul class="sector__tags">
+            <li class="mono">HANDOVER</li>
+            <li class="mono">LONGEVITY</li>
+            <li class="mono">DISCLOSURE</li>
+          </ul>
+        </article>
+
+        <article class="sector" data-anim="up" style="--i:4">
+          <span class="sector__idx mono">S-05</span>
+          <h3 class="sector__name">Energy &amp; Utilities</h3>
+          <p class="sector__body">
+            Operational uptime is a civic concern. Reversibility and rehearsed
+            failure paths dominate the design conversation.
+          </p>
+          <ul class="sector__tags">
+            <li class="mono">REVERSIBILITY</li>
+            <li class="mono">DRILLS</li>
+            <li class="mono">CONTINUITY</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <p class="note" data-anim="fade">Sector descriptions describe capability fit. They do not claim engagements or certifications.</p>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WORKING WITH US — process flow
+       ============================================================ -->
+  <section class="section section--dark process" aria-labelledby="process-title">
+    <div class="container">
+
+      <header class="sec-head sec-head--dark">
+        <p class="sec-label" data-anim="fade">WORKING WITH US</p>
+        <h2 class="sec-title" id="process-title" data-anim="up">
+          How an engagement actually runs.
+        </h2>
+        <p class="sec-lead" data-anim="up" style="--i:1">
+          Four phases, each ending in an artifact. Nothing proceeds until the
+          artifact is reviewed and accepted on both sides.
+        </p>
+      </header>
+
+      <div class="process__flow">
+
+        <div class="process__step" data-anim="up" style="--i:0">
+          <div class="process__step-head">
+            <span class="process__step-num mono">01</span>
+            <span class="process__step-dot" aria-hidden="true"></span>
+          </div>
+          <h3 class="process__step-title">Read</h3>
+          <p class="process__step-body">
+            We review your existing estate — services, ownership, contracts,
+            and the constraints that have never been written down. We interview
+            the people who actually operate the system.
+          </p>
+          <p class="process__step-art mono">ARTIFACT — ESTATE REVIEW</p>
+        </div>
+
+        <div class="process__step" data-anim="up" style="--i:1">
+          <div class="process__step-head">
+            <span class="process__step-num mono">02</span>
+            <span class="process__step-dot" aria-hidden="true"></span>
+          </div>
+          <h3 class="process__step-title">Draw</h3>
+          <p class="process__step-body">
+            We produce the first topology spec — a versioned diagram of what
+            exists, what should exist, and what the gap between them is. This
+            is the conversation document.
+          </p>
+          <p class="process__step-art mono">ARTIFACT — TOPOLOGY SPEC v0.1</p>
+        </div>
+
+        <div class="process__step" data-anim="up" style="--i:2">
+          <div class="process__step-head">
+            <span class="process__step-num mono">03</span>
+            <span class="process__step-dot" aria-hidden="true"></span>
+          </div>
+          <h3 class="process__step-title">Build</h3>
+          <p class="process__step-body">
+            Environments are provisioned from the accepted spec. Policies are
+            authored against it. Integrations are attached to declared
+            contracts, not to observed behaviour.
+          </p>
+          <p class="process__step-art mono">ARTIFACT — ENVIRONMENT SET + POLICY</p>
+        </div>
+
+        <div class="process__step" data-anim="up" style="--i:3">
+          <div class="process__step-head">
+            <span class="process__step-num mono">04</span>
+            <span class="process__step-dot" aria-hidden="true"></span>
+          </div>
+          <h3 class="process__step-title">Hand over</h3>
+          <p class="process__step-body">
+            Runbooks are written, rehearsed, and reviewed with the team that
+            will own them. The engagement ends when you can operate the platform
+            without us — not before.
+          </p>
+          <p class="process__step-art mono">ARTIFACT — RUNBOOK SET + HANDOVER</p>
+        </div>
+
+      </div>
+
+      <a class="link-arrow link-arrow--dark" href="../404.html" data-anim="fade">
+        VIEW THE FULL ENGAGEMENT METHOD
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA — image + text overlap (on Steel Blue to separate from footer)
+       ============================================================ -->
+  <section class="ab-cta" aria-labelledby="ab-cta-title">
+    <div class="container ab-cta__inner">
+
+      <div class="ab-cta__visual" data-anim="left" aria-hidden="true">
+        <div class="ab-cta__frame">
+          <svg viewBox="0 0 400 300" class="ab-cta__svg" role="img"
+               aria-label="Schematic of a platform topology fragment">
+            <defs>
+              <pattern id="ctaGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0H0V20" fill="none" stroke="rgba(246,248,250,.06)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="300" fill="url(#ctaGrid)"/>
+            <rect class="cta-node" x="40"  y="40"  width="120" height="40"/>
+            <rect class="cta-node" x="240" y="40"  width="120" height="40"/>
+            <rect class="cta-node" x="40"  y="130" width="320" height="40"/>
+            <rect class="cta-node" x="40"  y="220" width="140" height="40"/>
+            <rect class="cta-node" x="220" y="220" width="140" height="40"/>
+            <path class="cta-line" d="M100 80V130"/>
+            <path class="cta-line" d="M300 80V130"/>
+            <path class="cta-line" d="M110 170V220"/>
+            <path class="cta-line" d="M290 170V220"/>
+          </svg>
+          <span class="ab-cta__frame-cap mono">FIG. B — CONTINUE THE CONVERSATION</span>
+        </div>
+      </div>
+
+      <div class="ab-cta__copy" data-anim="right">
+        <p class="sec-label">TALK TO US</p>
+        <h2 class="ab-cta__title" id="ab-cta-title">
+          If your diagram<br>is out of date,<br>so is your platform.
+        </h2>
+        <p class="ab-cta__lead">
+          Bring us the system nobody wants to touch. We will tell you honestly
+          whether we can help, and what we would not attempt in the first
+          quarter.
+        </p>
+
+        <div class="ab-cta__actions">
+          <a class="btn btn--blush" href="contact.html">
+            START A CONVERSATION <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a class="btn btn--ghost-dark" href="services.html">
+            SEE HOW WE ENGAGE
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer on-dark">
+  <div class="container footer__grid">
+
+    <div class="footer__col footer__col--brand">
+      <a class="brand on-dark" href="../index.html" aria-label="Stackly — home">
+        <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+        
+      </a>
+      <p class="footer__desc">
+        An enterprise software platform for teams that run critical operations —
+        modelled, governed, integrated, and measured.
+      </p>
+      <ul class="footer__social">
+        <li><a href="../404.html" aria-label="Stackly on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a href="../404.html" aria-label="Stackly on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="../404.html" aria-label="Stackly on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li><a href="../404.html" aria-label="Stackly on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <nav class="footer__col" aria-label="Footer navigation">
+      <h2 class="footer__head">NAVIGATE</h2>
+      <ul class="footer__list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Platform modules">
+      <h2 class="footer__head">PLATFORM</h2>
+      <ul class="footer__list">
+        <li><a href="../404.html">Policy Engine</a></li>
+        <li><a href="../404.html">Identity Fabric</a></li>
+        <li><a href="../404.html">Event Transport</a></li>
+        <li><a href="../404.html">Capacity Model</a></li>
+        <li><a href="../404.html">Audit &amp; Lineage</a></li>
+        <li><a href="../404.html">Release Governance</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Resources">
+      <h2 class="footer__head">RESOURCES</h2>
+      <ul class="footer__list">
+        <li><a href="../404.html">Documentation</a></li>
+        <li><a href="../404.html">API Reference</a></li>
+        <li><a href="../404.html">Engineering Journal</a></li>
+        <li><a href="../404.html">Release Notes</a></li>
+        <li><a href="../404.html">Status History</a></li>
+        <li><a href="../404.html">Security Posture</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col">
+      <h2 class="footer__head">CONTACT</h2>
+      <ul class="footer__contact">
+        <li>
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>+91 94426 73815</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:hello@stackly.example">hello@stackly.example</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+          <span>Stackly, Salem,<br>Tamil Nadu, India</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__base">
+    <p class="mono">© <span id="year">2025</span> STACKLY · ALL RIGHTS RESERVED</p>
+    <p class="mono footer__base-links">
+      <a href="../404.html">PRIVACY</a>
+      <span aria-hidden="true">·</span>
+      <a href="../404.html">TERMS</a>
+      <span aria-hidden="true">·</span>
+      <a href="../404.html">ACCESSIBILITY</a>
+    </p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+/* ---------- Header / overlay ---------- */
+(function () {
+  "use strict";
+
+  var body      = document.body;
+  var overlay   = document.getElementById("navOverlay");
+  var openBtn   = document.getElementById("menuBtn");
+  var closeBtn  = document.getElementById("menuClose");
+  var lastFocus = null;
+
+  if (!overlay || !openBtn) return;
+
+  var FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+  function focusables() {
+    return Array.prototype.filter.call(
+      overlay.querySelectorAll(FOCUSABLE),
+      function (el) { return el.offsetParent !== null || el === closeBtn; }
+    );
+  }
+
+  function openMenu() {
+    lastFocus = document.activeElement;
+    overlay.classList.add("is-open");
+    overlay.setAttribute("aria-hidden", "false");
+    openBtn.setAttribute("aria-expanded", "true");
+    openBtn.classList.add("is-open");
+    body.classList.add("is-locked");
+    var f = focusables();
+    if (f.length) { f[0].focus(); }
+  }
+
+  function closeMenu() {
+    overlay.classList.remove("is-open");
+    overlay.setAttribute("aria-hidden", "true");
+    openBtn.setAttribute("aria-expanded", "false");
+    openBtn.classList.remove("is-open");
+    body.classList.remove("is-locked");
+    if (lastFocus && typeof lastFocus.focus === "function") { lastFocus.focus(); }
+    else { openBtn.focus(); }
+  }
+
+  openBtn.addEventListener("click", openMenu);
+  if (closeBtn) { closeBtn.addEventListener("click", closeMenu); }
+
+  overlay.addEventListener("click", function (e) {
+    if (e.target.closest("a")) { closeMenu(); }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (!overlay.classList.contains("is-open")) return;
+
+    if (e.key === "Escape") { e.preventDefault(); closeMenu(); return; }
+
+    if (e.key === "Tab") {
+      var f = focusables();
+      if (!f.length) return;
+      var first = f[0];
+      var last  = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    }
+  });
+
+  var yearEl = document.getElementById("year");
+  if (yearEl) { yearEl.textContent = String(new Date().getFullYear()); }
+})();
+
+/* ---------- Reveal system ---------- */
+(function () {
+  "use strict";
+
+  window.__stacklyRevealReady = true;
+
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var nodes  = document.querySelectorAll("[data-anim]");
+
+  function revealAll() {
+    for (var i = 0; i < nodes.length; i++) { nodes[i].classList.add("is-in"); }
+  }
+
+  if (reduce || !("IntersectionObserver" in window)) { revealAll(); return; }
+
+  var isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-in");
+        io.unobserve(entry.target);
+      }
+    });
+  }, isMobile
+    ? { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+    : { rootMargin: "0px 0px -14% 0px", threshold: 0.14 }
+  );
+
+  for (var j = 0; j < nodes.length; j++) { io.observe(nodes[j]); }
+})();
+
+/* ---------- Governance tabs ---------- */
+(function () {
+  "use strict";
+
+  var tabs  = document.querySelectorAll(".gov-tab");
+  var panel = document.getElementById("govPanel");
+  if (!tabs.length || !panel) return;
+
+  var contents = panel.querySelectorAll(".gov-content");
+
+  function activate(dim, tabEl) {
+    for (var i = 0; i < tabs.length; i++) {
+      var on = tabs[i].getAttribute("data-dim") === dim;
+      tabs[i].classList.toggle("is-active", on);
+      tabs[i].setAttribute("aria-selected", on ? "true" : "false");
+    }
+    for (var j = 0; j < contents.length; j++) {
+      contents[j].classList.toggle("is-active",
+        contents[j].getAttribute("data-dim") === dim);
+    }
+    if (tabEl && tabEl.id) {
+      panel.setAttribute("aria-labelledby", tabEl.id);
+    }
+  }
+
+  for (var i = 0; i < tabs.length; i++) {
+    (function (tab) {
+      tab.addEventListener("click", function () {
+        activate(tab.getAttribute("data-dim"), tab);
+      });
+      tab.addEventListener("keydown", function (e) {
+        var idx = Array.prototype.indexOf.call(tabs, tab);
+        var next = null;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") { next = tabs[(idx + 1) % tabs.length]; }
+        if (e.key === "ArrowLeft"  || e.key === "ArrowUp")   { next = tabs[(idx - 1 + tabs.length) % tabs.length]; }
+        if (next) { e.preventDefault(); next.focus(); activate(next.getAttribute("data-dim"), next); }
+      });
+    })(tabs[i]);
+  }
+})();
+
+/* ---------- GSAP — two named moments only ---------- */
+(function () {
+  "use strict";
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduceMotion) return;
+  if (typeof gsap === "undefined") return;
+  if (typeof ScrollTrigger === "undefined") return;
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* 1 — Milestones spine draw */
+  var spine = document.getElementById("spineLine");
+  if (spine) {
+    var len = 0;
+    try { len = spine.getTotalLength(); } catch (err) { len = 0; }
+    if (len) {
+      gsap.set(spine, { strokeDasharray: len, strokeDashoffset: len });
+      gsap.to(spine, {
+        strokeDashoffset: 0,
+        duration: 1.4,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".milestones__wrap",
+          start: "top 78%",
+          once: true
+        }
+      });
+    }
+  }
+
+  /* 2 — Origin narrative marker pulse */
+  var originItems = document.querySelectorAll(".origin__item");
+  if (originItems.length) {
+    originItems.forEach(function (item) {
+      gsap.fromTo(item,
+        { x: 12 },
+        {
+          x: 0,
+          duration: .6,
+          ease: "power2.out",
+          scrollTrigger: { trigger: item, start: "top 88%", once: true }
+        }
+      );
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

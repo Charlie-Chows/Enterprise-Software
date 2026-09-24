@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services — Stackly Enterprise Software Platform</title>
+    <meta name="description"
+        content="Platform capabilities, data surfaces, integrations, security posture, deployment models, and engagement structures from Stackly.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="../css/services.css">
+
+    <script>
+        document.documentElement.classList.add('js-ready');
+        window.__stacklyRevealReady = false;
+        window.setTimeout(function () {
+            if (!window.__stacklyRevealReady) {
+                var n = document.querySelectorAll('[data-anim]');
+                for (var i = 0; i < n.length; i++) { n[i].classList.add('is-in'); }
+            }
+        }, 1200);
+    </script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============================================================
+     HEADER
+     ============================================================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header__inner">
+
+            <a class="brand" href="../index.html" aria-label="Stackly — home">
+                <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+                
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav__list">
+                    <li><a class="nav__link" href="../index.html">Home</a></li>
+                    <li><a class="nav__link" href="about.html">About</a></li>
+                    <li><a class="nav__link is-active" href="services.html" aria-current="page">Services</a></li>
+                    <li><a class="nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="nav__link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a class="btn btn--chip header__login" href="login.html">Login</a>
+
+                <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="navOverlay">
+                    <span class="menu-btn__label">MENU</span>
+                    <span class="menu-btn__lines" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ============================================================
+     FULL-SCREEN NAVIGATION OVERLAY
+     ============================================================ -->
+    <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Site navigation"
+        aria-hidden="true">
+
+        <div class="overlay__top container">
+            <a class="brand on-dark" href="../index.html" aria-label="Stackly — home">
+                <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+                
+            </a>
+            <button class="overlay__close" id="menuClose" type="button" aria-label="Close menu">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <nav class="overlay__nav container" aria-label="Overlay">
+            <p class="overlay__eyebrow mono">[ NAVIGATION ]</p>
+            <ul class="overlay__list">
+                <li class="overlay__item" style="--i:0"><a href="../index.html"><span
+                            class="overlay__idx">01</span>Home</a></li>
+                <li class="overlay__item" style="--i:1"><a href="about.html"><span
+                            class="overlay__idx">02</span>About</a></li>
+                <li class="overlay__item" style="--i:2"><a href="services.html"><span
+                            class="overlay__idx">03</span>Services</a></li>
+                <li class="overlay__item" style="--i:3"><a href="blog.html"><span class="overlay__idx">04</span>Blog</a>
+                </li>
+                <li class="overlay__item" style="--i:4"><a href="contact.html"><span
+                            class="overlay__idx">05</span>Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="overlay__foot container">
+            <a class="btn btn--blush overlay__login" href="login.html">
+                LOGIN <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <p class="overlay__meta mono">STACKLY PLATFORM · SALEM, IN</p>
+        </div>
+
+    </div>
+
+    <main id="main">
+
+        <!-- ============================================================
+       HERO — curtain image reveal
+       ============================================================ -->
+        <section class="sv-hero" aria-labelledby="sv-hero-title">
+            <div class="container sv-hero__inner">
+
+                <div class="sv-hero__copy">
+                    <p class="sv-hero__eyebrow mono" data-anim="fade">
+                        <span class="sig-dot" aria-hidden="true"></span>
+                        SERVICES
+                    </p>
+
+                    <h1 class="sv-hero__title" id="sv-hero-title">
+                        <span data-anim="up" style="--i:0">Capabilities that carry</span>
+                        <span data-anim="up" style="--i:1">operational weight.</span>
+                    </h1>
+
+                    <p class="sv-hero__lead" data-anim="up" style="--i:2">
+                        Every Stackly capability ships as a first-class surface: console,
+                        API, and policy. Nothing is delivered as a slide deck. This page
+                        describes what is available, how it is governed, and how engagements
+                        are structured.
+                    </p>
+
+                    <div class="sv-hero__actions" data-anim="up" style="--i:3">
+                        <a class="btn btn--primary" href="contact.html">
+                            TALK TO ENGINEERING <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn--ghost" href="about.html">
+                            SEE HOW WE WORK
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sv-hero__visual" data-anim="right">
+                    <div class="sv-curtain" id="svCurtain">
+                        <div class="sv-curtain__panel sv-curtain__panel--a">
+                            <span class="sv-curtain__label mono">CAPABILITY</span>
+                        </div>
+                        <div class="sv-curtain__panel sv-curtain__panel--b">
+                            <span class="sv-curtain__label mono">SURFACE</span>
+                        </div>
+                        <div class="sv-curtain__content">
+                            <figure class="sv-diagram">
+                                <figcaption class="sv-diagram__cap mono">FIG. S1 — SERVICE MAP</figcaption>
+
+                                <svg class="sv-diagram__svg" viewBox="0 0 500 380" role="img"
+                                    aria-label="Service map showing ten capability blocks around a central governance ring">
+                                    <defs>
+                                        <pattern id="svGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+                                            <path d="M25 0H0V25" fill="none" stroke="rgba(19,36,64,.05)"
+                                                stroke-width="1" />
+                                        </pattern>
+                                    </defs>
+
+                                    <rect width="500" height="380" fill="url(#svGrid)" />
+
+                                    <circle cx="250" cy="190" r="62" class="sv-ring" />
+                                    <circle cx="250" cy="190" r="44" class="sv-ring sv-ring--inner" />
+                                    <text x="250" y="186" class="sv-ring-label" text-anchor="middle">GOVERNANCE</text>
+                                    <text x="250" y="204" class="sv-ring-label sv-ring-label--sm"
+                                        text-anchor="middle">CORE</text>
+
+                                    <g class="sv-spokes">
+                                        <line x1="250" y1="190" x2="70" y2="60" />
+                                        <line x1="250" y1="190" x2="250" y2="40" />
+                                        <line x1="250" y1="190" x2="430" y2="60" />
+                                        <line x1="250" y1="190" x2="50" y2="190" />
+                                        <line x1="250" y1="190" x2="450" y2="190" />
+                                        <line x1="250" y1="190" x2="70" y2="330" />
+                                        <line x1="250" y1="190" x2="250" y2="350" />
+                                        <line x1="250" y1="190" x2="430" y2="330" />
+                                    </g>
+
+                                    <g class="sv-blocks">
+                                        <rect class="sv-block" x="20" y="30" width="100" height="46" />
+                                        <rect class="sv-block" x="200" y="18" width="100" height="46" />
+                                        <rect class="sv-block" x="380" y="30" width="100" height="46" />
+                                        <rect class="sv-block" x="10" y="167" width="100" height="46" />
+                                        <rect class="sv-block" x="390" y="167" width="100" height="46" />
+                                        <rect class="sv-block" x="20" y="304" width="100" height="46" />
+                                        <rect class="sv-block" x="200" y="316" width="100" height="46" />
+                                        <rect class="sv-block" x="380" y="304" width="100" height="46" />
+
+                                        <text class="sv-block-label" x="30" y="58">IDENTITY</text>
+                                        <text class="sv-block-label" x="210" y="46">POLICY</text>
+                                        <text class="sv-block-label" x="390" y="58">ORCHESTRATE</text>
+                                        <text class="sv-block-label" x="20" y="195">CONTRACTS</text>
+                                        <text class="sv-block-label" x="400" y="195">OBSERVE</text>
+                                        <text class="sv-block-label" x="30" y="332">STORAGE</text>
+                                        <text class="sv-block-label" x="210" y="344">TRANSPORT</text>
+                                        <text class="sv-block-label" x="390" y="332">DELIVERY</text>
+                                    </g>
+                                </svg>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       CAPABILITY OVERVIEW — asymmetrical grid
+       ============================================================ -->
+        <section class="section cap-overview" aria-labelledby="cap-title">
+            <div class="container">
+
+                <header class="sec-head">
+                    <p class="sec-label" data-anim="fade">CAPABILITY OVERVIEW</p>
+                    <h2 class="sec-title" id="cap-title" data-anim="up">
+                        What the platform provides.
+                    </h2>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Ten capability domains, described by surface — console, API, policy —
+                        rather than by feature. Each block below maps to a maintained,
+                        versioned platform component.
+                    </p>
+                </header>
+
+                <div class="cap-grid">
+
+                    <article class="cap-cell cap-cell--feature" data-anim="up" style="--i:0">
+                        <p class="cap-cell__id mono">CAP-01</p>
+                        <h3 class="cap-cell__title">Identity &amp; Access</h3>
+                        <p class="cap-cell__body">
+                            Directory-backed identity with declared group-to-role mapping.
+                            No implicit inheritance. Every session carries an auditable origin.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                            <li class="mono">POLICY</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:1">
+                        <p class="cap-cell__id mono">CAP-02</p>
+                        <h3 class="cap-cell__title">Policy Engine</h3>
+                        <p class="cap-cell__body">
+                            Versioned policy documents with deterministic evaluation order and
+                            a traceable decision record for every request.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:2">
+                        <p class="cap-cell__id mono">CAP-03</p>
+                        <h3 class="cap-cell__title">Service Orchestration</h3>
+                        <p class="cap-cell__body">
+                            Declarative service definitions, staged rollouts, and rehearsed
+                            rollback on every environment.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                            <li class="mono">CLI</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:3">
+                        <p class="cap-cell__id mono">CAP-04</p>
+                        <h3 class="cap-cell__title">Data Contracts</h3>
+                        <p class="cap-cell__body">
+                            Schema registry with validation at the boundary. Producers that
+                            cannot satisfy the contract are rejected, not reconciled downstream.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell cap-cell--wide" data-anim="up" style="--i:4">
+                        <p class="cap-cell__id mono">CAP-05</p>
+                        <h3 class="cap-cell__title">Event &amp; Stream Transport</h3>
+                        <p class="cap-cell__body">
+                            Durable topic and queue bridges with backpressure, replay, and
+                            per-topic lineage. Suitable for both command and telemetry flows.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                            <li class="mono">POLICY</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:5">
+                        <p class="cap-cell__id mono">CAP-06</p>
+                        <h3 class="cap-cell__title">Integration Fabric</h3>
+                        <p class="cap-cell__body">
+                            Maintained adapters with versioned contracts, test suites, and
+                            documented failure modes.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:6">
+                        <p class="cap-cell__id mono">CAP-07</p>
+                        <h3 class="cap-cell__title">Observability</h3>
+                        <p class="cap-cell__body">
+                            Metrics, traces, and structured logs forwarded without reshaping
+                            your existing schema.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:7">
+                        <p class="cap-cell__id mono">CAP-08</p>
+                        <h3 class="cap-cell__title">Capacity Model</h3>
+                        <p class="cap-cell__body">
+                            Declared resource envelopes per service. Regional load and demand
+                            are compared against the model, not against a dashboard guess.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">POLICY</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:8">
+                        <p class="cap-cell__id mono">CAP-09</p>
+                        <h3 class="cap-cell__title">Audit &amp; Lineage</h3>
+                        <p class="cap-cell__body">
+                            Immutable decision log with export. Every policy resolution and
+                            every environment change is queryable.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">API</li>
+                        </ul>
+                    </article>
+
+                    <article class="cap-cell" data-anim="up" style="--i:9">
+                        <p class="cap-cell__id mono">CAP-10</p>
+                        <h3 class="cap-cell__title">Release Governance</h3>
+                        <p class="cap-cell__body">
+                            Change records that survive the person who made them. Staged
+                            channels with sign-off and rehearsed recovery.
+                        </p>
+                        <ul class="cap-cell__surfaces">
+                            <li class="mono">CONSOLE</li>
+                            <li class="mono">CLI</li>
+                            <li class="mono">POLICY</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+                <p class="note" data-anim="fade">Capability descriptions define platform surface area. They are not a
+                    service-level commitment.</p>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       FEATURED CAPABILITY — sticky content
+       ============================================================ -->
+        <section class="section section--dim featured" aria-labelledby="feat-title">
+            <div class="container featured__grid">
+
+                <div class="featured__sticky">
+                    <p class="sec-label" data-anim="fade">FEATURED CAPABILITY</p>
+                    <p class="featured__code mono" data-anim="fade">CAP-02 · POLICY ENGINE</p>
+
+                    <h2 class="sec-title" id="feat-title" data-anim="up">
+                        A single source<br>for every decision.
+                    </h2>
+
+                    <p class="lead" data-anim="up" style="--i:1">
+                        The Policy Engine resolves access, change, and data decisions from a
+                        versioned document set. No hidden defaults. No inherited surprises.
+                        No configuration only one person understands.
+                    </p>
+
+                    <a class="link-arrow" href="../404.html" data-anim="up" style="--i:2">
+                        READ THE POLICY ENGINE BRIEF
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="featured__stream">
+
+                    <article class="feat-panel" data-anim="up" style="--i:0">
+                        <span class="feat-panel__num mono">STEP 01</span>
+                        <h3 class="feat-panel__title">Declare</h3>
+                        <p class="feat-panel__body">
+                            Every rule is written down. Rules are grouped by scope —
+                            tenant, workspace, environment, resource — so that resolution
+                            order is unambiguous and reviewable.
+                        </p>
+                        <ul class="feat-panel__props">
+                            <li><span class="mono">FORMAT</span> Declarative, versioned</li>
+                            <li><span class="mono">REVIEW</span> Diff-based, like code</li>
+                        </ul>
+                    </article>
+
+                    <article class="feat-panel" data-anim="up" style="--i:1">
+                        <span class="feat-panel__num mono">STEP 02</span>
+                        <h3 class="feat-panel__title">Evaluate</h3>
+                        <p class="feat-panel__body">
+                            Resolution is deterministic. Given the same inputs, the same rule
+                            fires. Every evaluation records the rule, the subject, and the
+                            scope — exportable as evidence.
+                        </p>
+                        <ul class="feat-panel__props">
+                            <li><span class="mono">ORDER</span> Deterministic, documented</li>
+                            <li><span class="mono">TRACE</span> Per-decision record</li>
+                        </ul>
+                    </article>
+
+                    <article class="feat-panel" data-anim="up" style="--i:2">
+                        <span class="feat-panel__num mono">STEP 03</span>
+                        <h3 class="feat-panel__title">Stage</h3>
+                        <p class="feat-panel__body">
+                            Changes roll out through staged channels. The same spec is applied
+                            across regions, with sign-off gates between each stage. Nothing
+                            bypasses the process.
+                        </p>
+                        <ul class="feat-panel__props">
+                            <li><span class="mono">CHANNELS</span> Declared, per environment</li>
+                            <li><span class="mono">ROLLBACK</span> To any prior revision</li>
+                        </ul>
+                    </article>
+
+                    <article class="feat-panel" data-anim="up" style="--i:3">
+                        <span class="feat-panel__num mono">STEP 04</span>
+                        <h3 class="feat-panel__title">Review</h3>
+                        <p class="feat-panel__body">
+                            Every decision, every change, every rollback is written to a
+                            durable log. Auditors read the log; they do not need to ask us.
+                            The log outlives any individual engineer.
+                        </p>
+                        <ul class="feat-panel__props">
+                            <li><span class="mono">EXPORT</span> Structured, queryable</li>
+                            <li><span class="mono">RETENTION</span> Configurable per tenant</li>
+                        </ul>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       CORE PLATFORM — interactive tabs
+       ============================================================ -->
+        <section class="section core" aria-labelledby="core-title">
+            <div class="container">
+
+                <header class="sec-head">
+                    <p class="sec-label" data-anim="fade">CORE PLATFORM</p>
+                    <h2 class="sec-title" id="core-title" data-anim="up">
+                        The surfaces that stay the same.
+                    </h2>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Four surfaces, present on every deployment. Each is independently
+                        versioned and independently observable. Select to inspect a surface.
+                    </p>
+                </header>
+
+                <div class="core__grid">
+
+                    <div class="core__tabs" role="tablist" aria-label="Platform surfaces" data-anim="left">
+                        <button class="core-tab is-active" role="tab" aria-selected="true" data-surface="console"
+                            id="coretab-console" aria-controls="corePanel">
+                            <span class="core-tab__idx mono">S-01</span>
+                            <span class="core-tab__body">
+                                <span class="core-tab__name">Console</span>
+                                <span class="core-tab__desc mono">Visual control surface</span>
+                            </span>
+                        </button>
+                        <button class="core-tab" role="tab" aria-selected="false" data-surface="api" id="coretab-api"
+                            aria-controls="corePanel">
+                            <span class="core-tab__idx mono">S-02</span>
+                            <span class="core-tab__body">
+                                <span class="core-tab__name">API</span>
+                                <span class="core-tab__desc mono">Programmatic interface</span>
+                            </span>
+                        </button>
+                        <button class="core-tab" role="tab" aria-selected="false" data-surface="cli" id="coretab-cli"
+                            aria-controls="corePanel">
+                            <span class="core-tab__idx mono">S-03</span>
+                            <span class="core-tab__body">
+                                <span class="core-tab__name">CLI</span>
+                                <span class="core-tab__desc mono">Terminal access</span>
+                            </span>
+                        </button>
+                        <button class="core-tab" role="tab" aria-selected="false" data-surface="policy"
+                            id="coretab-policy" aria-controls="corePanel">
+                            <span class="core-tab__idx mono">S-04</span>
+                            <span class="core-tab__body">
+                                <span class="core-tab__name">Policy</span>
+                                <span class="core-tab__desc mono">Declared ruleset</span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="core__panel" id="corePanel" role="tabpanel" aria-labelledby="coretab-console"
+                        tabindex="0" data-anim="right">
+
+                        <div class="core-view is-active" data-surface="console">
+                            <p class="core-view__id mono">SURFACE 01 · CONSOLE</p>
+                            <h3 class="core-view__title">Visual control surface.</h3>
+                            <p class="core-view__body">
+                                A single console for every governed action: provisioning, policy
+                                authoring, access review, deployment, and audit. The console is a
+                                view over the same model the API reads — not a separate source of
+                                truth.
+                            </p>
+                            <ul class="core-view__features">
+                                <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Environment and workspace
+                                    views</li>
+                                <li><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Topology and
+                                    dependency map</li>
+                                <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Policy authoring and
+                                    diff</li>
+                                <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Capacity and usage panels
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="core-view" data-surface="api">
+                            <p class="core-view__id mono">SURFACE 02 · API</p>
+                            <h3 class="core-view__title">Programmatic interface.</h3>
+                            <p class="core-view__body">
+                                Every console action is available over a documented API with
+                                stable versioning. Requests inherit the same policy enforcement
+                                as the console — no privileged path exists that the API cannot
+                                reach, or vice versa.
+                            </p>
+                            <ul class="core-view__features">
+                                <li><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Versioned endpoints,
+                                    breaking changes announced</li>
+                                <li><i class="fa-solid fa-plug" aria-hidden="true"></i> SDKs for common runtimes</li>
+                                <li><i class="fa-solid fa-terminal" aria-hidden="true"></i> Deterministic response
+                                    envelopes</li>
+                                <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Policy enforced per
+                                    request</li>
+                            </ul>
+                        </div>
+
+                        <div class="core-view" data-surface="cli">
+                            <p class="core-view__id mono">SURFACE 03 · CLI</p>
+                            <h3 class="core-view__title">Terminal access.</h3>
+                            <p class="core-view__body">
+                                The CLI is the fastest path for engineers who live in a shell.
+                                It uses the same API, the same policy, and the same audit log.
+                                Scripted operations remain governed end to end.
+                            </p>
+                            <ul class="core-view__features">
+                                <li><i class="fa-solid fa-terminal" aria-hidden="true"></i> Authenticated via the same
+                                    identity fabric</li>
+                                <li><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Scriptable, idempotent
+                                    operations</li>
+                                <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Same policy — no
+                                    privileged bypass</li>
+                                <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Composable with existing
+                                    tooling</li>
+                            </ul>
+                        </div>
+
+                        <div class="core-view" data-surface="policy">
+                            <p class="core-view__id mono">SURFACE 04 · POLICY</p>
+                            <h3 class="core-view__title">Declared ruleset.</h3>
+                            <p class="core-view__body">
+                                Policy is not a settings page. It is a versioned document set,
+                                authored, reviewed, and diffed like code. It resolves every
+                                decision taken by every other surface.
+                            </p>
+                            <ul class="core-view__features">
+                                <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Versioned, diffable
+                                    documents</li>
+                                <li><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Scope-aware
+                                    resolution order</li>
+                                <li><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Per-decision trace and
+                                    export</li>
+                                <li><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Staged rollout across
+                                    environments</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       DATA & ANALYTICS — expandable panels
+       ============================================================ -->
+        <section class="section section--dark data" aria-labelledby="data-title">
+            <div class="container">
+
+                <header class="sec-head sec-head--dark">
+                    <p class="sec-label" data-anim="fade">DATA &amp; ANALYTICS</p>
+                    <h2 class="sec-title" id="data-title" data-anim="up">
+                        Numbers with provenance.
+                    </h2>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Every figure on the platform carries its source. Expand each panel to
+                        see what is measured, how it is measured, and where the record lives.
+                    </p>
+                </header>
+
+                <div class="data__list">
+
+                    <details class="data-panel" data-anim="up" style="--i:0" open>
+                        <summary class="data-panel__summary">
+                            <span class="data-panel__idx mono">D-01</span>
+                            <span class="data-panel__name">Operational metrics</span>
+                            <span class="data-panel__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="data-panel__body">
+                            <p>
+                                Service-level counters, gauges, and duration histograms emitted
+                                by every platform component. Metrics are tagged with service,
+                                environment, region, and revision — so any figure can be traced
+                                back to the exact build that produced it.
+                            </p>
+                            <ul class="data-panel__facts">
+                                <li><span class="mono">SOURCE</span> Platform components</li>
+                                <li><span class="mono">TRANSPORT</span> OpenTelemetry-compatible</li>
+                                <li><span class="mono">RETENTION</span> Configurable per tenant</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="data-panel" data-anim="up" style="--i:1">
+                        <summary class="data-panel__summary">
+                            <span class="data-panel__idx mono">D-02</span>
+                            <span class="data-panel__name">Decision traces</span>
+                            <span class="data-panel__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="data-panel__body">
+                            <p>
+                                Every policy resolution produces a structured trace: the subject,
+                                the resource, the scope, the rule that fired, and the timestamp.
+                                Traces are exportable as structured records — the same records an
+                                auditor would read.
+                            </p>
+                            <ul class="data-panel__facts">
+                                <li><span class="mono">FORMAT</span> Structured, queryable</li>
+                                <li><span class="mono">EXPORT</span> Per-window or per-record</li>
+                                <li><span class="mono">RETENTION</span> Configurable per tenant</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="data-panel" data-anim="up" style="--i:2">
+                        <summary class="data-panel__summary">
+                            <span class="data-panel__idx mono">D-03</span>
+                            <span class="data-panel__name">Data lineage</span>
+                            <span class="data-panel__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="data-panel__body">
+                            <p>
+                                Each record that enters the platform is stamped with its source,
+                                its contract version, and the policy under which it was accepted.
+                                Lineage is written at ingestion, not reconstructed later.
+                            </p>
+                            <ul class="data-panel__facts">
+                                <li><span class="mono">WRITTEN</span> At ingestion</li>
+                                <li><span class="mono">SCOPE</span> Per record</li>
+                                <li><span class="mono">EXPORT</span> Structured, filterable</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="data-panel" data-anim="up" style="--i:3">
+                        <summary class="data-panel__summary">
+                            <span class="data-panel__idx mono">D-04</span>
+                            <span class="data-panel__name">Capacity envelope</span>
+                            <span class="data-panel__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="data-panel__body">
+                            <p>
+                                Declared resource envelopes per service, per region. Observed
+                                load is compared against the declared envelope, and drift is
+                                surfaced before it becomes an incident. The envelope is part of
+                                the topology spec, not a dashboard setting.
+                            </p>
+                            <ul class="data-panel__facts">
+                                <li><span class="mono">DECLARED</span> In the topology spec</li>
+                                <li><span class="mono">MEASURED</span> Against declared values</li>
+                                <li><span class="mono">ALERTING</span> On envelope breach</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="data-panel" data-anim="up" style="--i:4">
+                        <summary class="data-panel__summary">
+                            <span class="data-panel__idx mono">D-05</span>
+                            <span class="data-panel__name">Change history</span>
+                            <span class="data-panel__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="data-panel__body">
+                            <p>
+                                Every change to the platform — a policy, an environment, a
+                                contract — enters the change log. The log is immutable and
+                                searchable. Review, approval, and rollback are all visible in a
+                                single timeline.
+                            </p>
+                            <ul class="data-panel__facts">
+                                <li><span class="mono">MUTABILITY</span> Append-only</li>
+                                <li><span class="mono">SEARCH</span> By actor, target, revision</li>
+                                <li><span class="mono">RETENTION</span> Configurable per tenant</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                </div>
+
+                <p class="note note--dark" data-anim="fade">Descriptions define platform surface area. Actual retention
+                    and configuration options depend on deployment.</p>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       INTEGRATIONS & APIS — SVG flow + process flow
+       ============================================================ -->
+        <section class="section integ" aria-labelledby="integ-title">
+            <div class="container">
+
+                <header class="sec-head">
+                    <p class="sec-label" data-anim="fade">INTEGRATIONS &amp; APIS</p>
+                    <h2 class="sec-title" id="integ-title" data-anim="up">
+                        How data moves through the platform.
+                    </h2>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Six processing stages, from external source to governed delivery.
+                        Each stage is independently observable and independently deployable.
+                    </p>
+                </header>
+
+                <div class="integ__diagram" data-anim="up" style="--i:2">
+                    <figure class="flow">
+                        <figcaption class="flow__cap mono">FIG. S2 — INGESTION PIPELINE</figcaption>
+
+                        <svg class="flow__svg" viewBox="0 0 1200 220" role="img"
+                            aria-label="Pipeline diagram: source, edge gateway, validation, transport, core services, delivery">
+                            <defs>
+                                <marker id="flowArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                                    <path d="M0,0 L8,4 L0,8 Z" fill="#3B9797" />
+                                </marker>
+                            </defs>
+
+                            <g class="flow-lines" stroke="#3B9797" stroke-width="1.5" fill="none"
+                                marker-end="url(#flowArrow)">
+                                <line class="flow-line" x1="150" y1="110" x2="220" y2="110" />
+                                <line class="flow-line" x1="360" y1="110" x2="430" y2="110" />
+                                <line class="flow-line" x1="570" y1="110" x2="640" y2="110" />
+                                <line class="flow-line" x1="780" y1="110" x2="850" y2="110" />
+                                <line class="flow-line" x1="990" y1="110" x2="1060" y2="110" />
+                            </g>
+
+                            <g class="flow-nodes">
+                                <rect class="flow-node" x="20" y="76" width="130" height="68" rx="2" />
+                                <rect class="flow-node" x="220" y="76" width="140" height="68" rx="2" />
+                                <rect class="flow-node" x="430" y="76" width="140" height="68" rx="2" />
+                                <rect class="flow-node" x="640" y="76" width="140" height="68" rx="2" />
+                                <rect class="flow-node" x="850" y="76" width="140" height="68" rx="2" />
+                                <rect class="flow-node" x="1060" y="76" width="120" height="68" rx="2" />
+
+                                <text class="flow-num" x="34" y="102">01</text>
+                                <text class="flow-num" x="234" y="102">02</text>
+                                <text class="flow-num" x="444" y="102">03</text>
+                                <text class="flow-num" x="654" y="102">04</text>
+                                <text class="flow-num" x="864" y="102">05</text>
+                                <text class="flow-num" x="1074" y="102">06</text>
+
+                                <text class="flow-label" x="34" y="126">SOURCE</text>
+                                <text class="flow-label" x="234" y="126">EDGE GATEWAY</text>
+                                <text class="flow-label" x="444" y="126">VALIDATION</text>
+                                <text class="flow-label" x="654" y="126">TRANSPORT</text>
+                                <text class="flow-label" x="864" y="126">CORE</text>
+                                <text class="flow-label" x="1074" y="126">DELIVERY</text>
+
+                                <text class="flow-sub" x="34" y="176">External system</text>
+                                <text class="flow-sub" x="234" y="176">Auth &amp; rate limit</text>
+                                <text class="flow-sub" x="444" y="176">Contract check</text>
+                                <text class="flow-sub" x="654" y="176">Durable stream</text>
+                                <text class="flow-sub" x="864" y="176">Policy resolution</text>
+                                <text class="flow-sub" x="1074" y="176">Console · API</text>
+                            </g>
+                        </svg>
+                    </figure>
+                </div>
+
+                <div class="integ__steps">
+
+                    <article class="integ-step" data-anim="up" style="--i:0">
+                        <span class="integ-step__num mono">STAGE 01</span>
+                        <h3 class="integ-step__title">Source</h3>
+                        <p class="integ-step__body">
+                            External systems connect through a declared adapter. No source is
+                            permitted to write into the platform without a name.
+                        </p>
+                    </article>
+
+                    <article class="integ-step" data-anim="up" style="--i:1">
+                        <span class="integ-step__num mono">STAGE 02</span>
+                        <h3 class="integ-step__title">Edge gateway</h3>
+                        <p class="integ-step__body">
+                            Authentication, rate limiting, and initial schema checks happen
+                            here — before the platform accepts any record.
+                        </p>
+                    </article>
+
+                    <article class="integ-step" data-anim="up" style="--i:2">
+                        <span class="integ-step__num mono">STAGE 03</span>
+                        <h3 class="integ-step__title">Validation</h3>
+                        <p class="integ-step__body">
+                            Payloads are validated against a declared contract. Non-conforming
+                            records are rejected with a reason, not silently reconciled.
+                        </p>
+                    </article>
+
+                    <article class="integ-step" data-anim="up" style="--i:3">
+                        <span class="integ-step__num mono">STAGE 04</span>
+                        <h3 class="integ-step__title">Transport</h3>
+                        <p class="integ-step__body">
+                            Validated records move over a durable stream. Replay, backpressure,
+                            and per-topic lineage are available without additional tooling.
+                        </p>
+                    </article>
+
+                    <article class="integ-step" data-anim="up" style="--i:4">
+                        <span class="integ-step__num mono">STAGE 05</span>
+                        <h3 class="integ-step__title">Core</h3>
+                        <p class="integ-step__body">
+                            Identity, policy, and orchestration resolve every request in
+                            declared order. Each resolution produces a traceable record.
+                        </p>
+                    </article>
+
+                    <article class="integ-step" data-anim="up" style="--i:5">
+                        <span class="integ-step__num mono">STAGE 06</span>
+                        <h3 class="integ-step__title">Delivery</h3>
+                        <p class="integ-step__body">
+                            Console, API, and exports present the same governed surface. A
+                            permission enforced in one interface applies identically in the
+                            others.
+                        </p>
+                    </article>
+
+                </div>
+
+                <a class="link-arrow" href="../404.html" data-anim="fade">
+                    OPEN API REFERENCE
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ============================================================
+       DEPLOYMENT MODELS — split editorial
+       ============================================================ -->
+        <section class="section deploy" aria-labelledby="deploy-title">
+            <div class="container">
+
+                <header class="sec-head sec-head--split">
+                    <div>
+                        <p class="sec-label" data-anim="fade">DEPLOYMENT MODELS</p>
+                        <h2 class="sec-title" id="deploy-title" data-anim="up">
+                            Where the platform runs.
+                        </h2>
+                    </div>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Three deployment models, each with a distinct operational shape and a
+                        distinct set of tradeoffs. The platform behaves identically across
+                        all three — what changes is who holds the keys.
+                    </p>
+                </header>
+
+                <div class="deploy__grid">
+
+                    <article class="deploy-card" data-anim="up" style="--i:0">
+                        <div class="deploy-card__visual" aria-hidden="true">
+                            <svg viewBox="0 0 200 120" class="deploy-card__svg">
+                                <rect class="dc-out" x="10" y="30" width="60" height="60" />
+                                <rect class="dc-in" x="130" y="30" width="60" height="60" />
+                                <line class="dc-line" x1="70" y1="60" x2="130" y2="60" />
+                                <circle class="dc-dot" cx="100" cy="60" r="4" />
+                            </svg>
+                        </div>
+                        <div class="deploy-card__body">
+                            <span class="deploy-card__id mono">DM-01</span>
+                            <h3 class="deploy-card__title">Cloud-managed</h3>
+                            <p class="deploy-card__text">
+                                The platform runs in our multi-region control plane. You operate
+                                the workspaces; we operate the platform. Fastest path to a
+                                governed environment.
+                            </p>
+                            <ul class="deploy-card__specs">
+                                <li><span class="mono">CONTROL</span> Platform team</li>
+                                <li><span class="mono">REGIONS</span> Declared per tenant</li>
+                                <li><span class="mono">DATA</span> Tenant-isolated</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="deploy-card deploy-card--accent" data-anim="up" style="--i:1">
+                        <div class="deploy-card__visual" aria-hidden="true">
+                            <svg viewBox="0 0 200 120" class="deploy-card__svg">
+                                <rect class="dc-out" x="10" y="30" width="60" height="60" />
+                                <rect class="dc-in dc-in--split" x="130" y="30" width="60" height="60" />
+                                <line class="dc-line" x1="70" y1="45" x2="130" y2="45" />
+                                <line class="dc-line" x1="70" y1="75" x2="130" y2="75" />
+                                <circle class="dc-dot" cx="100" cy="45" r="4" />
+                                <circle class="dc-dot" cx="100" cy="75" r="4" />
+                            </svg>
+                        </div>
+                        <div class="deploy-card__body">
+                            <span class="deploy-card__id mono">DM-02</span>
+                            <h3 class="deploy-card__title">Private deployment</h3>
+                            <p class="deploy-card__text">
+                                The platform runs inside your infrastructure. Full control over
+                                networking, storage, and identity resolution — with our operators
+                                available for review and escalation.
+                            </p>
+                            <ul class="deploy-card__specs">
+                                <li><span class="mono">CONTROL</span> Your team</li>
+                                <li><span class="mono">REGIONS</span> Your choice</li>
+                                <li><span class="mono">DATA</span> Your boundary</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="deploy-card" data-anim="up" style="--i:2">
+                        <div class="deploy-card__visual" aria-hidden="true">
+                            <svg viewBox="0 0 200 120" class="deploy-card__svg">
+                                <rect class="dc-out" x="10" y="30" width="60" height="60" />
+                                <rect class="dc-in" x="70" y="10" width="60" height="40" />
+                                <rect class="dc-in" x="70" y="70" width="60" height="40" />
+                                <rect class="dc-in" x="130" y="30" width="60" height="60" />
+                                <line class="dc-line" x1="70" y1="60" x2="130" y2="60" />
+                                <line class="dc-line" x1="100" y1="50" x2="100" y2="70" />
+                            </svg>
+                        </div>
+                        <div class="deploy-card__body">
+                            <span class="deploy-card__id mono">DM-03</span>
+                            <h3 class="deploy-card__title">Hybrid</h3>
+                            <p class="deploy-card__text">
+                                The control plane runs with us; the data plane runs with you. The
+                                topology spec is shared. Regions and roles are declared on both
+                                sides and reconciled the same way.
+                            </p>
+                            <ul class="deploy-card__specs">
+                                <li><span class="mono">CONTROL</span> Shared, declared</li>
+                                <li><span class="mono">REGIONS</span> Split by intent</li>
+                                <li><span class="mono">DATA</span> Declared per plane</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       ENGAGEMENT MODELS — layered cards
+       ============================================================ -->
+        <section class="section section--dark engage" aria-labelledby="engage-title">
+            <div class="container">
+
+                <header class="sec-head sec-head--dark">
+                    <p class="sec-label" data-anim="fade">ENGAGEMENT MODELS</p>
+                    <h2 class="sec-title" id="engage-title" data-anim="up">
+                        Three ways to work with us.
+                    </h2>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Each model has a defined shape, defined outputs, and a defined exit.
+                        We do not run open-ended engagements.
+                    </p>
+                </header>
+
+                <div class="engage__stack">
+
+                    <article class="engage-card" data-anim="up" style="--i:0">
+                        <header class="engage-card__head">
+                            <span class="engage-card__id mono">EM-01</span>
+                            <span class="engage-card__tag mono">FIXED SCOPE</span>
+                        </header>
+                        <h3 class="engage-card__title">Assessment</h3>
+                        <p class="engage-card__body">
+                            A structured review of your current estate: services, ownership,
+                            contracts, and constraints. Ends with a topology spec and a
+                            written gap analysis.
+                        </p>
+                        <dl class="engage-card__meta">
+                            <div>
+                                <dt class="mono">DURATION</dt>
+                                <dd>Bounded to the estate</dd>
+                            </div>
+                            <div>
+                                <dt class="mono">OUTPUT</dt>
+                                <dd>Estate map + topology spec v0.1</dd>
+                            </div>
+                            <div>
+                                <dt class="mono">COMMIT</dt>
+                                <dd>None beyond the review window</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="engage-card engage-card--accent" data-anim="up" style="--i:1">
+                        <header class="engage-card__head">
+                            <span class="engage-card__id mono">EM-02</span>
+                            <span class="engage-card__tag engage-card__tag--blush mono">DELIVERY</span>
+                        </header>
+                        <h3 class="engage-card__title">Build &amp; hand over</h3>
+                        <p class="engage-card__body">
+                            We model, provision, integrate, validate, and hand over a fully
+                            operating platform — with runbooks rehearsed against your own
+                            operators, not ours.
+                        </p>
+                        <dl class="engage-card__meta">
+                            <div>
+                                <dt class="mono">DURATION</dt>
+                                <dd>Defined per topology spec</dd>
+                            </div>
+                            <div>
+                                <dt class="mono">OUTPUT</dt>
+                                <dd>Environment set + policy + runbook</dd>
+                            </div>
+                            <div>
+                                <dt class="mono">COMMIT</dt>
+                                <dd>Handover gate, agreed in writing</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="engage-card" data-anim="up" style="--i:2">
+                        <header class="engage-card__head">
+                            <span class="engage-card__id mono">EM-03</span>
+                            <span class="engage-card__tag mono">CONTINUOUS</span>
+                        </header>
+                        <h3 class="engage-card__title">Steady state</h3>
+                        <p class="engage-card__body">
+                            Ongoing review, revision, and escalation support for teams that
+                            operate the platform themselves. Delivered as a scheduled cadence,
+                            not an on-call hotline.
+                        </p>
+                        <dl class="engage-card__meta">
+                            <div>
+                                <dt class="mono">DURATION</dt>
+                                <dd>Rolling, cancellable</dd>
+                            </div>
+                            <div>
+                                <dt class="mono">OUTPUT</dt>
+                                <dd>Quarterly review + model updates</dd>
+                            </div>
+                            <div>
+                                <dt class="mono">COMMIT</dt>
+                                <dd>Cadence-based, not hours-based</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                </div>
+
+                <p class="note note--dark" data-anim="fade">Model descriptions are illustrative of engagement shape.
+                    Specific terms are agreed per engagement.</p>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       FREQUENTLY ASKED — accordion
+       ============================================================ -->
+        <section class="section section--dim faq" aria-labelledby="faq-title">
+            <div class="container">
+
+                <header class="sec-head sec-head--split">
+                    <div>
+                        <p class="sec-label" data-anim="fade">FREQUENTLY ASKED</p>
+                        <h2 class="sec-title" id="faq-title" data-anim="up">
+                            Questions we get<br>in the first call.
+                        </h2>
+                    </div>
+                    <p class="sec-lead" data-anim="up" style="--i:1">
+                        Answers reflect how the platform is designed to behave. They are not
+                        contractual statements.
+                    </p>
+                </header>
+
+                <div class="faq__list">
+
+                    <details class="faq-item" data-anim="up" style="--i:0" open>
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__q">How is Stackly different from a general-purpose platform
+                                tool?</span>
+                            <span class="faq-item__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-item__body">
+                            <p>
+                                General-purpose tools model infrastructure. Stackly models the
+                                operational model — services, contracts, ownership, and the rules
+                                that govern them — and provisions infrastructure from that model.
+                                The diagram is authoritative, not descriptive.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item" data-anim="up" style="--i:1">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__q">Do we need to migrate everything at once?</span>
+                            <span class="faq-item__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-item__body">
+                            <p>
+                                No. The topology spec is designed to describe an estate in
+                                stages. Existing systems are declared as external until they are
+                                brought onto the platform. The model accommodates mixed estates
+                                from day one.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item" data-anim="up" style="--i:2">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__q">What happens if the platform is unavailable?</span>
+                            <span class="faq-item__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-item__body">
+                            <p>
+                                The control plane and data plane are separable by design. Where
+                                the deployment model allows, the data plane continues to operate
+                                under its last accepted policy set while the control plane is
+                                unavailable. Reconciliation resumes automatically when control
+                                returns.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item" data-anim="up" style="--i:3">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__q">Can we author policies without engineering involvement?</span>
+                            <span class="faq-item__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-item__body">
+                            <p>
+                                Policy documents are written in a declared syntax that reviewers
+                                from security, compliance, and engineering can read. Authoring is
+                                not restricted to engineers, but review is — every policy change
+                                passes through the same change process as code.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item" data-anim="up" style="--i:4">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__q">How do we handle a regulator's request for evidence?</span>
+                            <span class="faq-item__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-item__body">
+                            <p>
+                                The audit log and decision traces are exportable as structured
+                                records. Evidence requests are answered from the export, without
+                                involving us. If the export cannot answer a question, the
+                                question is a signal that the model has a gap.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item" data-anim="up" style="--i:5">
+                        <summary class="faq-item__summary">
+                            <span class="faq-item__q">What is not included?</span>
+                            <span class="faq-item__toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </summary>
+                        <div class="faq-item__body">
+                            <p>
+                                Managed support during off-hours, bespoke adapter development for
+                                one-off systems, and migration of application logic. The platform
+                                governs how systems talk to each other — it does not rewrite what
+                                those systems do.
+                            </p>
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       CTA — full-bleed dark
+       ============================================================ -->
+        <section class="sv-cta" aria-labelledby="sv-cta-title">
+            <div class="container sv-cta__inner">
+
+                <div class="sv-cta__copy" data-anim="left">
+                    <p class="sec-label">NEXT STEP</p>
+                    <h2 class="sv-cta__title" id="sv-cta-title">
+                        Tell us what<br>you operate today.
+                    </h2>
+                    <p class="sv-cta__lead">
+                        Bring the estate you actually run — including the parts that work
+                        because one person remembers them. We will tell you what is
+                        straightforward, what is genuinely hard, and what we would not
+                        attempt in the first quarter.
+                    </p>
+                </div>
+
+                <div class="sv-cta__aside" data-anim="right">
+                    <div class="sv-cta__box">
+                        <p class="sv-cta__box-label mono">WHAT HAPPENS NEXT</p>
+                        <ol class="sv-cta__steps">
+                            <li><span class="mono">01</span> A short reply from an engineer, not a sales team</li>
+                            <li><span class="mono">02</span> A 45-minute technical call, no slide deck</li>
+                            <li><span class="mono">03</span> A written summary of what we heard</li>
+                            <li><span class="mono">04</span> Your decision — no follow-up cadence</li>
+                        </ol>
+                    </div>
+
+                    <div class="sv-cta__actions">
+                        <a class="btn btn--blush" href="contact.html">
+                            TALK TO ENGINEERING <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn--ghost-dark" href="about.html">
+                            READ ABOUT OUR PRACTICE
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="site-footer on-dark">
+        <div class="container footer__grid">
+
+            <div class="footer__col footer__col--brand">
+                <a class="brand on-dark" href="../index.html" aria-label="Stackly — home">
+                    <img class="brand__logo" src="../logo.webp" alt="" width="34" height="34">
+                    
+                </a>
+                <p class="footer__desc">
+                    An enterprise software platform for teams that run critical operations —
+                    modelled, governed, integrated, and measured.
+                </p>
+                <ul class="footer__social">
+                    <li><a href="../404.html" aria-label="Stackly on LinkedIn"><i class="fa-brands fa-linkedin-in"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="../404.html" aria-label="Stackly on X"><i class="fa-brands fa-x-twitter"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="../404.html" aria-label="Stackly on Facebook"><i class="fa-brands fa-facebook-f"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="../404.html" aria-label="Stackly on YouTube"><i class="fa-brands fa-youtube"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <nav class="footer__col" aria-label="Footer navigation">
+                <h2 class="footer__head">NAVIGATE</h2>
+                <ul class="footer__list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__col" aria-label="Platform modules">
+                <h2 class="footer__head">PLATFORM</h2>
+                <ul class="footer__list">
+                    <li><a href="../404.html">Policy Engine</a></li>
+                    <li><a href="../404.html">Identity Fabric</a></li>
+                    <li><a href="../404.html">Event Transport</a></li>
+                    <li><a href="../404.html">Capacity Model</a></li>
+                    <li><a href="../404.html">Audit &amp; Lineage</a></li>
+                    <li><a href="../404.html">Release Governance</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__col" aria-label="Resources">
+                <h2 class="footer__head">RESOURCES</h2>
+                <ul class="footer__list">
+                    <li><a href="../404.html">Documentation</a></li>
+                    <li><a href="../404.html">API Reference</a></li>
+                    <li><a href="../404.html">Engineering Journal</a></li>
+                    <li><a href="../404.html">Release Notes</a></li>
+                    <li><a href="../404.html">Status History</a></li>
+                    <li><a href="../404.html">Security Posture</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__col">
+                <h2 class="footer__head">CONTACT</h2>
+                <ul class="footer__contact">
+                    <li>
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span>+91 94426 73815</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:hello@stackly.example">hello@stackly.example</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Stackly, Salem,<br>Tamil Nadu, India</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container footer__base">
+            <p class="mono">© <span id="year">2025</span> STACKLY · ALL RIGHTS RESERVED</p>
+            <p class="mono footer__base-links">
+                <a href="../404.html">PRIVACY</a>
+                <span aria-hidden="true">·</span>
+                <a href="../404.html">TERMS</a>
+                <span aria-hidden="true">·</span>
+                <a href="../404.html">ACCESSIBILITY</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        /* ---------- Header / overlay ---------- */
+        (function () {
+            "use strict";
+
+            var body = document.body;
+            var overlay = document.getElementById("navOverlay");
+            var openBtn = document.getElementById("menuBtn");
+            var closeBtn = document.getElementById("menuClose");
+            var lastFocus = null;
+
+            if (!overlay || !openBtn) return;
+
+            var FOCUSABLE = 'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+            function focusables() {
+                return Array.prototype.filter.call(
+                    overlay.querySelectorAll(FOCUSABLE),
+                    function (el) { return el.offsetParent !== null || el === closeBtn; }
+                );
+            }
+
+            function openMenu() {
+                lastFocus = document.activeElement;
+                overlay.classList.add("is-open");
+                overlay.setAttribute("aria-hidden", "false");
+                openBtn.setAttribute("aria-expanded", "true");
+                openBtn.classList.add("is-open");
+                body.classList.add("is-locked");
+                var f = focusables();
+                if (f.length) { f[0].focus(); }
+            }
+
+            function closeMenu() {
+                overlay.classList.remove("is-open");
+                overlay.setAttribute("aria-hidden", "true");
+                openBtn.setAttribute("aria-expanded", "false");
+                openBtn.classList.remove("is-open");
+                body.classList.remove("is-locked");
+                if (lastFocus && typeof lastFocus.focus === "function") { lastFocus.focus(); }
+                else { openBtn.focus(); }
+            }
+
+            openBtn.addEventListener("click", openMenu);
+            if (closeBtn) { closeBtn.addEventListener("click", closeMenu); }
+
+            overlay.addEventListener("click", function (e) {
+                if (e.target.closest("a")) { closeMenu(); }
+            });
+
+            document.addEventListener("keydown", function (e) {
+                if (!overlay.classList.contains("is-open")) return;
+
+                if (e.key === "Escape") { e.preventDefault(); closeMenu(); return; }
+
+                if (e.key === "Tab") {
+                    var f = focusables();
+                    if (!f.length) return;
+                    var first = f[0];
+                    var last = f[f.length - 1];
+                    if (e.shiftKey && document.activeElement === first) {
+                        e.preventDefault(); last.focus();
+                    } else if (!e.shiftKey && document.activeElement === last) {
+                        e.preventDefault(); first.focus();
+                    }
+                }
+            });
+
+            var yearEl = document.getElementById("year");
+            if (yearEl) { yearEl.textContent = String(new Date().getFullYear()); }
+        })();
+
+        /* ---------- Reveal system ---------- */
+        (function () {
+            "use strict";
+
+            window.__stacklyRevealReady = true;
+
+            var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            var nodes = document.querySelectorAll("[data-anim]");
+
+            function revealAll() {
+                for (var i = 0; i < nodes.length; i++) { nodes[i].classList.add("is-in"); }
+            }
+
+            if (reduce || !("IntersectionObserver" in window)) { revealAll(); return; }
+
+            var isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-in");
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, isMobile
+                ? { rootMargin: "0px 0px -8% 0px", threshold: 0.08 }
+                : { rootMargin: "0px 0px -14% 0px", threshold: 0.14 }
+            );
+
+            for (var j = 0; j < nodes.length; j++) { io.observe(nodes[j]); }
+        })();
+
+        /* ---------- Core Platform tabs ---------- */
+        (function () {
+            "use strict";
+
+            var tabs = document.querySelectorAll(".core-tab");
+            var panel = document.getElementById("corePanel");
+            if (!tabs.length || !panel) return;
+
+            var views = panel.querySelectorAll(".core-view");
+
+            function activate(surface, tabEl) {
+                for (var i = 0; i < tabs.length; i++) {
+                    var on = tabs[i].getAttribute("data-surface") === surface;
+                    tabs[i].classList.toggle("is-active", on);
+                    tabs[i].setAttribute("aria-selected", on ? "true" : "false");
+                }
+                for (var j = 0; j < views.length; j++) {
+                    views[j].classList.toggle("is-active",
+                        views[j].getAttribute("data-surface") === surface);
+                }
+                if (tabEl && tabEl.id) {
+                    panel.setAttribute("aria-labelledby", tabEl.id);
+                }
+            }
+
+            for (var i = 0; i < tabs.length; i++) {
+                (function (tab) {
+                    tab.addEventListener("click", function () {
+                        activate(tab.getAttribute("data-surface"), tab);
+                    });
+                    tab.addEventListener("keydown", function (e) {
+                        var idx = Array.prototype.indexOf.call(tabs, tab);
+                        var next = null;
+                        if (e.key === "ArrowRight" || e.key === "ArrowDown") { next = tabs[(idx + 1) % tabs.length]; }
+                        if (e.key === "ArrowLeft" || e.key === "ArrowUp") { next = tabs[(idx - 1 + tabs.length) % tabs.length]; }
+                        if (next) { e.preventDefault(); next.focus(); activate(next.getAttribute("data-surface"), next); }
+                    });
+                })(tabs[i]);
+            }
+        })();
+
+        /* ---------- Single Accordion behavior ---------- */
+        (function () {
+            "use strict";
+
+            function setupSingleAccordion(containerSelector) {
+                var container = document.querySelector(containerSelector);
+                if (!container) return;
+                var items = container.querySelectorAll("details");
+
+                for (var i = 0; i < items.length; i++) {
+                    items[i].addEventListener("toggle", function () {
+                        if (this.open) {
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j] !== this && items[j].open) {
+                                    items[j].removeAttribute("open");
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+
+            setupSingleAccordion(".data__list");
+            setupSingleAccordion(".faq__list");
+        })();
+
+        /* ---------- GSAP — two named moments only ---------- */
+        (function () {
+            "use strict";
+
+            var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            if (reduceMotion) return;
+            if (typeof gsap === "undefined") return;
+            if (typeof ScrollTrigger === "undefined") return;
+
+            gsap.registerPlugin(ScrollTrigger);
+
+            /* 1 — Hero curtain reveal */
+            var curtain = document.getElementById("svCurtain");
+            if (curtain) {
+                var panels = curtain.querySelectorAll(".sv-curtain__panel");
+                var content = curtain.querySelector(".sv-curtain__content");
+                if (panels.length && content) {
+                    gsap.set(content, { opacity: 0 });
+                    gsap.set(panels, { scaleX: 1 });
+                    var tl = gsap.timeline({ delay: 0.2 });
+                    tl.to(content, { opacity: 1, duration: 0.5, ease: "power2.out" })
+                        .to(panels, {
+                            scaleX: 0,
+                            duration: 0.9,
+                            ease: "power3.inOut",
+                            stagger: 0.08
+                        }, "-=0.2");
+                }
+            }
+
+            /* 2 — Pipeline SVG line drawing */
+            var flowLines = document.querySelectorAll(".flow-line");
+            if (flowLines.length) {
+                for (var k = 0; k < flowLines.length; k++) {
+                    (function (line) {
+                        var len = 0;
+                        try { len = line.getTotalLength(); } catch (err) { len = 0; }
+                        if (!len) return;
+                        gsap.set(line, { strokeDasharray: len, strokeDashoffset: len });
+                        gsap.to(line, {
+                            strokeDashoffset: 0,
+                            duration: 0.55,
+                            ease: "power2.inOut",
+                            delay: k * 0.08,
+                            scrollTrigger: { trigger: ".integ__diagram", start: "top 78%", once: true }
+                        });
+                    })(flowLines[k]);
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
