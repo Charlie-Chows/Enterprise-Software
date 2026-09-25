@@ -1094,6 +1094,12 @@ input::selection {
     text-align: center;
   }
 
+  .footer__head {
+    font-size: .8125rem;
+    letter-spacing: .2em;
+    margin-bottom: 20px;
+  }
+
   .footer__list a:hover {
     padding-left: 0;
   }
